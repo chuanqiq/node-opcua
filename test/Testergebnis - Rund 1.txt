@@ -1,0 +1,2851 @@
+"C:\Program Files\WebStorm 2017.1.1\bin\runnerw.exe" "C:\Program Files\nodejs\node.exe" "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" test
+
+> node-opcua@0.0.64 pretest C:\KIT\GitRepository\node-opcua
+> node bin/crypto_create_CA.js demo --dev --silent
+
+                                                                                               
+        Create Demo certificates                                                               
+                                                                                               
+
+reading configuration
+===================== 
+
+ using  g_config file  C:\KIT\GitRepository\node-opcua\certificates\config.js
+ configuration = 
+   subject                        : /C=FR/ST=IDF/L=Paris/O=NodeOPCUA/CN=NodeOPCUA-TEST
+   validity                       : 5475
+   keySize                        : 2048
+   certificateDir                 : C:/KIT/GitRepository/node-opcua/certificates
+   CAFolder                       : C:/KIT/GitRepository/node-opcua/certificates/CA
+   PKIFolder                      : C:/KIT/GitRepository/node-opcua/certificates/PKI
+   altNames                       : 
+   dns                            : DESKTOP-C48FPKB
+   ip                             : 
+     hostname =  DESKTOP-C48FPKB
+ urn =  urn:DESKTOP-C48FPKB:NodeOPCUA-Client
+         privateKey C:/KIT/GitRepository/node-opcua/certificates/client_key_1024.pem  already exists => skipping
+OpenSSL version :  OpenSSL 1.0.2j  26 Sep 2016
+        certificate C:/KIT/GitRepository/node-opcua/certificates/client_cert_1024.pem already exists => do not overwrite
+        certificate C:/KIT/GitRepository/node-opcua/certificates/client_selfsigned_cert_1024.pem already exists => do not overwrite
+ ERROR :  Command failed: "C:\KIT\GitRepository\node-opcua\node_modules\node-opcua-pki\bin\openssl\openssl.exe" verify -verbose -CRLfile "C:/KIT/GitRepository/node-opcua/certificates/CA/crl/revocation_list.crl" -crl_check -CAfile "C:/KIT/GitRepository/node-opcua/certificates/CA/public/cacert.pem" "C:/KIT/GitRepository/node-opcua/certificates/client_cert_1024_revoked.pem"
+
+ urn =  urn:DESKTOP-C48FPKB:NodeOPCUA-Client
+         privateKey C:/KIT/GitRepository/node-opcua/certificates/client_key_2048.pem  already exists => skipping
+        certificate C:/KIT/GitRepository/node-opcua/certificates/client_cert_2048.pem already exists => do not overwrite
+        certificate C:/KIT/GitRepository/node-opcua/certificates/client_selfsigned_cert_2048.pem already exists => do not overwrite
+ ERROR :  Command failed: "C:\KIT\GitRepository\node-opcua\node_modules\node-opcua-pki\bin\openssl\openssl.exe" verify -verbose -CRLfile "C:/KIT/GitRepository/node-opcua/certificates/CA/crl/revocation_list.crl" -crl_check -CAfile "C:/KIT/GitRepository/node-opcua/certificates/CA/public/cacert.pem" "C:/KIT/GitRepository/node-opcua/certificates/client_cert_2048_revoked.pem"
+
+ urn =  urn:DESKTOP-C48FPKB:NodeOPCUA-Server
+         privateKey C:/KIT/GitRepository/node-opcua/certificates/server_key_1024.pem  already exists => skipping
+        certificate C:/KIT/GitRepository/node-opcua/certificates/server_cert_1024.pem already exists => do not overwrite
+        certificate C:/KIT/GitRepository/node-opcua/certificates/server_selfsigned_cert_1024.pem already exists => do not overwrite
+ ERROR :  Command failed: "C:\KIT\GitRepository\node-opcua\node_modules\node-opcua-pki\bin\openssl\openssl.exe" verify -verbose -CRLfile "C:/KIT/GitRepository/node-opcua/certificates/CA/crl/revocation_list.crl" -crl_check -CAfile "C:/KIT/GitRepository/node-opcua/certificates/CA/public/cacert.pem" "C:/KIT/GitRepository/node-opcua/certificates/server_cert_1024_revoked.pem"
+
+ urn =  urn:DESKTOP-C48FPKB:NodeOPCUA-Server
+         privateKey C:/KIT/GitRepository/node-opcua/certificates/server_key_2048.pem  already exists => skipping
+        certificate C:/KIT/GitRepository/node-opcua/certificates/server_cert_2048.pem already exists => do not overwrite
+        certificate C:/KIT/GitRepository/node-opcua/certificates/server_selfsigned_cert_2048.pem already exists => do not overwrite
+ ERROR :  Command failed: "C:\KIT\GitRepository\node-opcua\node_modules\node-opcua-pki\bin\openssl\openssl.exe" verify -verbose -CRLfile "C:/KIT/GitRepository/node-opcua/certificates/CA/crl/revocation_list.crl" -crl_check -CAfile "C:/KIT/GitRepository/node-opcua/certificates/CA/public/cacert.pem" "C:/KIT/GitRepository/node-opcua/certificates/server_cert_2048_revoked.pem"
+
+ urn =  urn:DESKTOP-C48FPKB:NodeOPCUA-DiscoveryServer
+         privateKey C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_key_1024.pem  already exists => skipping
+        certificate C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_cert_1024.pem already exists => do not overwrite
+        certificate C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_selfsigned_cert_1024.pem already exists => do not overwrite
+ ERROR :  Command failed: "C:\KIT\GitRepository\node-opcua\node_modules\node-opcua-pki\bin\openssl\openssl.exe" verify -verbose -CRLfile "C:/KIT/GitRepository/node-opcua/certificates/CA/crl/revocation_list.crl" -crl_check -CAfile "C:/KIT/GitRepository/node-opcua/certificates/CA/public/cacert.pem" "C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_cert_1024_revoked.pem"
+
+ urn =  urn:DESKTOP-C48FPKB:NodeOPCUA-DiscoveryServer
+         privateKey C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_key_2048.pem  already exists => skipping
+        certificate C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_cert_2048.pem already exists => do not overwrite
+        certificate C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_selfsigned_cert_2048.pem already exists => do not overwrite
+ ERROR :  Command failed: "C:\KIT\GitRepository\node-opcua\node_modules\node-opcua-pki\bin\openssl\openssl.exe" verify -verbose -CRLfile "C:/KIT/GitRepository/node-opcua/certificates/CA/crl/revocation_list.crl" -crl_check -CAfile "C:/KIT/GitRepository/node-opcua/certificates/CA/public/cacert.pem" "C:/KIT/GitRepository/node-opcua/certificates/discoveryServer_cert_2048_revoked.pem"
+
+
+> node-opcua@0.0.64 test C:\KIT\GitRepository\node-opcua
+> mocha test --color -R spec --recursive --timeout 200000 --bail
+
+vInt64_1000 Variant(Scalar<Int64>, value: 0,1000)
+ timeout = 200000
+
+
+  AddressSpace : Conditions 
+    √ s
+    AddressSpace : Conditions 
+      √ should fail to instantiate a ConditionType (because it's abstract)
+      With a custom condition type
+        √ should instantiate a custom ConditionType (56ms)
+        √ should be possible to enable and disable a condition (57ms)
+        √ should be possible to activate the EnabledState.TransitionTime optional property
+        √ should be possible to activate the EnabledState.EffectiveTransitionTime optional property
+        √ should be possible to activate the EnabledState.EffectiveDisplayName optional property (69ms)
+        √ should be possible to set the comment of a condition using the addComment method of the condition instance
+        √ should be possible to set the comment of a condition using the addComment method of the conditionType (64ms)
+        √ should install the conditionSource in SourceNode and SourceName (61ms)
+        √ initial value of lastSeverity should be zero
+        √ setting severity should record lastSeverity (74ms)
+        √ should produce eventData  (78ms)
+        √ should raise a new condition  (42ms)
+        Condition Branches
+          √ should be possible to create several branches of a condition state (46ms)
+        Condition & Subscriptions : ConditionRefresh
+          √ %% should be possible to refresh a condition (46ms)
+    AddressSpace : Acknowledgeable Conditions 
+      √ should instantiate AcknowledgeableConditionType (42ms)
+      √ should instantiate AcknowledgeableConditionType (variation 2)
+      √ should instantiate AcknowledgeableConditionType with ConfirmedState
+      √ should instantiate AlarmConditionType with ConfirmedState and ShelvedState (62ms)
+      √ should instantiate AcknowledgeableConditionType **Without** ConfirmedState
+    AlarmConditionType
+      √ should instantiate an AlarmConditionType (39ms)
+      √ should instantiate AlarmConditionType (variation 2) (43ms)
+      √ should be possible to instantiate a Alarm with a inputNode as Null NodeId (ns=0;i=0)
+      √ should be possible to instantiate a Alarm with 'maxTimeShelved' 
+      should instantiate AlarmConditionType with ConfirmedState
+        √ checking basic properties
+        √ checking active state behavior
+        √ checking suppressed state behavior
+        √ checking shelving state behavior
+        √ checking shelving state behavior with automatic unshelving (509ms)
+        √ checking suppressedOrShelved behavior
+        Testing alarm  ShelvingStateMachine methods
+          √ unshelving an already unshelved alarm should return BadConditionNotShelved
+          √ unshelving an TimedShelved  alarm should succeed
+          √ unshelving an OneShotShelved  alarm should succeed
+          √ timed-shelving an already timed-shelved alarm should return BadConditionAlreadyShelved
+          √ timed-shelving an already oneshot-shelved alarm should return BadConditionAlreadyShelved
+          √ timed-shelving an unshelved alarm should return Good when ShelvingTime is OK
+          √ timed-shelving an unshelved alarm should return ShelvingTimeOutOfRange when ShelvingTime is out of range
+          √ one-shot-shelving an already one-shot-shelved alarm should return BadConditionAlreadyShelved
+          √ one-shot-shelving an unshelved alarm should return Good
+    AlarmConditionType: Server maintains current state only
+      √ should follow the example opcua 1.03 part 9 - annexe B  B.1.2  (82ms)
+    Limit Alarms 
+      √ should instantiate a ExclusiveLimitAlarm (114ms)
+      √ it should instantiate a NonExclusiveLimitAlarm (110ms)
+    Deviation Alarms : ExclusiveDeviation Alarms 
+      ExclusiveDeviationAlarm
+        √ should provide correct properties
+        √ ExclusiveDeviationAlarm - setpointNode Value is zero
+        √ ExclusiveDeviationAlarm - setPointValue is not zero (40ms)
+    Deviation Alarms : Non ExclusiveDeviationAlarms
+      NonExclusiveDeviationAlarm
+        √ should provide correct properties
+        √ should provide correct properties when set value is changed and back to orignal value
+        √ NonExclusiveDeviationAlarm (49ms)
+    Off Normal Alarms 
+      √ should instantiate a off normal alarm of a 3 state variable
+      √ should automatically active the alarm when inputNode Value doesn't match normal state
+    Alarm&Condition ConditionClassname and ConditionName 
+      √ CC1 - should be possible to set the ConditionName and ConditionClassName of an alarm
+
+  Testing Historical Data Node
+    √ should create a 'HA Configuration' node
+    √ should keep values in memory to provide historical reads
+    √ should keep values up to options.maxOnlineValues to provide historical reads
+
+  Testing Finite State Machine
+    exploring StateMachineType
+      √ finite state machine should have expected mandatory and optional fields
+      √ should instantiate a finite state machine
+      √ should instantiate a finite state machine with lastTransition
+      √ should bind a finite state machine state variable
+    exploring FiniteStateMachineType
+      √ should explore FiniteStateMachineType
+    connect to a existing state machine 
+      √ should handle a FiniteStateMachine Type defined in a nodeset.xml file
+    defining  a custom state machine 
+      √ should define a new FiniteMachineStateType
+
+  testing address space
+    √ AddressSpace#addObject : should verify that Only Organizes References are used to relate Objects to the 'Objects' standard Object.
+    √ AddressSpace#extractRootViews : it should provide a mean to extract the list of views to which the object is visible
+    BaseNode#findReferencesEx
+      √ should find HierarchicalReferences
+    AddressSpace#deleteNode
+      √ should remove an object from the address space
+      √ should remove an object and its children from the address space
+      √ should remove a component of a existing object
+    AddressSpace#findCorrespondingBasicDataType
+      √ should findCorrespondingBasicDataType i=13 => DataType.String
+      √ should findCorrespondingBasicDataType i=338 => BuildInfo => DataType.ExtensionObject
+      √ should findCorrespondingBasicDataType variation 1 - Alias
+      √ should findCorrespondingBasicDataType variation 2 - nodeId as String
+      √ should findCorrespondingBasicDataType variation 3 - nodeId as NodeId
+      √ should findCorrespondingBasicDataType i=852 (Enumeration ServerState) => UInt32
+    AddressSpace#findCorrespondingBasicDataType
+      √ should findCorrespondingBasicDataType i=13 => DataType.String
+      √ should findCorrespondingBasicDataType i=338 => BuildInfo => DataType.ExtensionObject
+      √ should findCorrespondingBasicDataType variation 1 - Alias
+      √ should findCorrespondingBasicDataType variation 2 - nodeId as String
+      √ should findCorrespondingBasicDataType variation 3 - nodeId as NodeId
+
+  AddressSpace : testing add enumeration type
+    √ should add a new Enumeration type into an address space - Form 1
+    √ should add a new Enumeration type into an address space - Form 2
+
+  AddressSpace : add event type 
+    √ #generateEventId should generate event id sequentially
+    √ should find BaseEventType
+    √ BaseEventType should be abstract 
+    √ should find AuditEventType
+    √ should verify that AuditEventType is a superType of BaseEventType
+    √ should find a newly added EventType
+    √ added EventType should be abstract by default
+    √ should be possible to add a non-abstract event type
+    √ should select node in a EventType using a SelectClause on BaseEventType
+    √ should select node in a EventType using a SelectClause  n AuditEventType
+    Fastest is test
+    √ should instantiate a condition efficiently ( more than 1000 per second on a decent computer) (161ms)
+    √ #constructEventData 
+    - #createEventData should add an basic event type
+
+  testing add new ObjectType 
+    √ should create a new TemperatureSensorType
+    √ should create a new CameraType with Method
+
+  testing add TwoStateVariable 
+    √ should had a TwoStateVariableType
+    √ TwoStateVariableType should had an uncertain value after creation
+    √ should had a TwoStateVariableType with trueState and falseState as String
+    √ should had a TwoStateVariableType with transitionTime
+    √ SubState => IsFalseSubStateOf
+    √ SubState => IsTrueSubStateOf
+    √ should had a TwoStateVariableType with effectiveTransitionTime
+
+  testing add new ObjectType 
+    √ should add a new ObjectType (=> BaseObjectType)
+    √ should add a new VariableType (=> BaseVariableType)
+    √ should add a new VariableType (=> BaseDataVariableType)
+
+  AddressSpace#browsePath
+    √ should browse Server
+    √ should browse Status
+    √ #QQ browsing a path when a null target name is not in the last element shall return an error 
+    √ should browse EventGeneratorObject
+    √ should browse MyEventType
+    √ should browse an empty path
+
+  testing address space namespace loading
+    √ should process namespaces and translate namespace index when loading node set xml files
+    √ should process namespaces and translate namespace index when loading node set xml files
+    √ ZZ should create a arbitrary structure from a second name space (53ms)
+    √ AA explore the DataType through OPCUA
+    √ AB explore the DataType through OPCUA
+    √ should bind an xml-preloaded Extension Object Variable : ServerStatus 
+    √ xxx should instantiate SessionDiagnostics in a linear time (553ms)
+
+  Testing AddressSpace memory Leaks
+    √ It should dispose an address_space (100ms)
+Garbage collection unavailable.  Pass --expose-gc when launching node to enable forced garbage collection.
+ memoryUsage =   rss = 153.72 MB  heapTotal = 130.98 MB  heapUsed = 97.90 MB
+Garbage collection unavailable.  Pass --expose-gc when launching node to enable forced garbage collection.
+ memoryUsage =   rss = 195.71 MB  heapTotal = 173.98 MB  heapUsed = 141.31 MB
+    √ It should repeatedly load an address_space => no Leak (4063ms)
+
+  address_space ModelChangeEvent
+    √ a node with a NodeVersion property shall trigger a ModelChangeEvent and update its NodeVersion when a object is added as one of its component
+    √ a node with a NodeVersion property shall trigger a ModelChangeEvent and update its NodeVersion when one of its child object is deleted
+    √ a node with a NodeVersion property shall trigger a ModelChangeEvent and update its NodeVersion when a reference is added
+    √ addressSpace#modelChangeTransactions should compress model change events 
+
+  testing address space namespace
+    √ #getNamespaceUri : should have namespace 0
+    √ #registerNamespace should register new namespace
+
+  testing  address space namespace loading
+    √ should process namespaces and translate namespace index when loading node set xml files (77ms)
+    √ should process multiple xml files that reference each other (75ms)
+    √ should process namespaces with DI (538ms)
+
+  testing add new ObjectType 
+   Aggregates/AggregatedBy ns=0;i=44
+    √ should instantiate a objectType that uses custom HasChild Property
+    √ should be possible to choose which optional item to instantiate in sub objects
+
+  Automatic Generation of  string nodeId
+    √ testing default string node creation (NodeOPCUA specified)
+
+      Given a Node with a String Node ( for instance : ns=1;s=abcdef )  
+      When  I add a component or a property to this node, without specifying a nodeId
+      Then  NodeOPCUA should assign a string nodeId to the property or the component derived from
+            the nodeId of the parent node and the browse name of the child.
+
+    √ should generate string NodeIds on components and properties when instantiating an object type that have a string nodeId (node-opcua specific)
+    √ should generate string NodeIds on components and properties when instantiating an VariableType that have a string nodeId (node-opcua specific)
+    Given a derived ObjectType 
+      √ When instantiating a derived ObjectType, unwanted optional components should not be instantiated
+      √ When instantiating a derived ObjectType, wanted optional components should be instantiated
+
+  Testing UAObject
+    √ AddressSpace#addObject should create a 'hasTypeDefinition' reference on node
+    √ BaseNode#addReference - referenceType as ReferenceType BrowseName
+    √ BaseNode#addReference - referenceType as nodeId String
+    √ BaseNode#addReference - referenceType as NodeId
+    √ BaseNode#addReference - nodeId as NodeId
+    √ BaseNode#addReference - nodeId as Node
+    √ BaseNode#addReference - nodeId as String
+    √ BaseNode#addReference with invalid referenceType should raise an exception
+    √ BaseNode#addReference - four equivalent cases
+    √ BaseNode#addReference - 2 nodes - should properly update backward references on referenced nodes
+    √ BaseNode#addReference - 3 nodes - should properly update backward references on referenced nodes
+    √ BaseNode#addReference should throw if the same reference is added twice
+    √ BaseNode#addReference internal cache must be invalidated
+    √ BaseNode#addReference (Inverse) internal cache must be invalidated
+    √ BaseNode#namespaceIndex
+    √ BaseNode#namespaceUri
+    √ AddressSpace#parent should provide a parent property to access parent node
+
+  Testing Boiler System
+    √ XX should handle StateMachine derived from ProgramStateMachine
+    √ XX should handle StateMachine derived from ProgramStateMachine
+A  NonHierarchicalReferences/NonHierarchicalReferences ns=0;i=32
+   FlowTo/FlowFrom ns=1;i=1031
+A  NonHierarchicalReferences/NonHierarchicalReferences ns=0;i=32
+    √ should create a boiler system (61ms)
+
+  testing address space
+    √ should dump references
+    √ should dump a browseDescription
+    √ should provide a convenient a way to construct the node full name 
+
+  testing dump browseDescriptions
+    √ should provide a way to find a Method object by nodeId
+
+  testing UADataype -  Attribute
+    √ UADataType#readAttribute
+    UADataType#isSupertypeOf
+      √ Number should not be a super type of Double
+      √ Double should be a super type of Number
+      √ Int16 should be a super type of Integer
+      √ Int16 should be a super type of Number
+      √ Int16 should not be a super type of Float
+      √ Int16 should be a super type of Int16
+      √ Duration should be a super type of Double
+      √ Double should *not* be a super type of Duration
+      √ Integer should *not* be a super type of UInt32
+      √ UInteger should *not* be a super type of Integer
+      √ UInt32 should be a super type of UInteger
+      √ UInt32 should *not* be a super type of Integer
+      √ UInt32 should be a super type of UInteger
+      √ UInt64 should be a super type of UInteger
+      √ int64 should be a super type of Integer
+      √ UInt64 should *not* be a super type of Integer
+      √ int64 should *not* be a super type of UInteger
+
+  Extension Object Array Node (or Complex Variable)
+    √ should create a Variable that expose an array of ExtensionObject of a specific type
+    √ should be possible to add more than one element in the Extension Object variable node (42ms)
+    √ should be possible to remove some element in the Extension Object variable node (71ms)
+
+  testing github issue https://github.com/node-opcua/node-opcua/issues/104
+    √ should not happen that node IDs are use twice
+
+  testing github issue https://github.com/node-opcua/node-opcua/issues/105
+    √ should be possible to create an object organized by a folder whose type is a subtype of FolderType
+
+  testing add new DataType 
+    √ should instantiate an object whose type defines an analog item
+    √ should verify that UAObjectType.instantiate works for complex ObjectTypes like DI and ADI (issue 108) (726ms)
+
+  Issue 162 : demonstrate how to modify an instantiate object variable
+    √ example from 162 - way 1 : using setValueFromSource
+    √ example from 162 - way 2 : rebinding variable 
+
+  #makeBrowsePath
+    √ should parse name containing spaces and ( or )
+
+  Issue 132
+    √ #312 - should load a nodeset xml file containing MandatoryPlaceHolder f (168ms)
+
+  Testing bug found in #337
+    √ should handle Matrix 
+
+  testing NodeSet XML file loading
+    √ should load a nodeset xml file (208ms)
+    √ should load a large nodeset xml file (680ms)
+    √ should load the DI nodeset  (518ms)
+    √ should read accessLevel and userAccessLevel attributes (423ms)
+    √ should read predefined values for variables (445ms)
+    √ Q1 should read a VariableType with a default value (75ms)
+    √ #339 default ValueRank should be -1  for UAVariable and UAVariableType when loading nodeset2.xml files (419ms)
+
+  Testing makeOptionalsMap
+    √ should create an optional map from a single string
+    √ should create an optional map from a single string
+
+  makeRelativePath
+    √ T1 should construct simple RelativePath for '/' 
+    √ T2 should construct simple RelativePath for '.' 
+    √ T3 should construct simple RelativePath for '<HasChild>' 
+    √ T4 should construct simple RelativePath for '<#HasChild>' 
+    √ T5 should construct simple RelativePath for '<!HasChild>' 
+    √ T6 should construct simple RelativePath for '<#!HasChild>' 
+    √ T7 should construct simple RelativePath for '/3:Truck'
+    √ T8 should construct simple RelativePath for '/3:Truck.0:NodeVersion' 
+    √ T9 should construct simple RelativePath for '/2:Block&.Output'
+    √ TA should construct simple RelativePath for '<1:ConnectedTo>1:Boiler/1:HeatSensor'
+    √ TB should construct simple RelativePath for '<1:ConnectedTo>1:Boiler/'
+    √ TC should construct simple RelativePath for '<0:HasChild>2:Wheel'
+    √ TD should construct simple RelativePath for '<!HasChild>2:Wheel'
+    √ TE should construct simple RelativePath for '<0:HasChild>'
+    √ TF should construct simple RelativePath for '<Organizes>Server.ServerStatus.CurrentTime'
+    √ TF should construct simple RelativePath for '<Organizes>Server2.ServerStatus.1.2'
+
+  testing Method -  Attribute UserExecutable & Executable on Method 
+    √ should return Executable= false and UserExecutable=false if method is not bound 
+    √ should return Executable= true and UserExecutable=true if method is  bound 
+
+  testing Method in address space
+    √ should provide a way to find a Method object by nodeId
+    √ should provide a way to find a Method object by nodeId
+    √ should provide a input Parameter variable
+    √ should provide a output Parameter variable
+
+  testing Method binding
+    √ should bind a method  
+
+  testing nodeset to xml
+    √ should output a standard extension object datatype to xml (Argument)
+{ value: 0, name: 'Running' }
+{ value: 1, name: 'Failed' }
+{ value: 2, name: 'NoConfiguration' }
+{ value: 3, name: 'Suspended' }
+{ value: 4, name: 'Shutdown' }
+{ value: 5, name: 'Test' }
+{ value: 6, name: 'CommunicationFault' }
+{ value: 7, name: 'Unknown' }
+    √ should output a standard Enum node to xml (ServerState)
+{ value: 0, name: 'RUNNING' }
+{ value: 1, name: 'STOPPED' }
+    √ ��� should output a custom Enum node to xml (MyEnumType) - Form1( with EnumStrings )
+{ name: 'RUNNING', value: 10 }
+{ name: 'STOPPED', value: 20 }
+    √ �� should output a custom Enum node to xml (MyEnumType) - Form2 ( with EnumValues )
+nodeset_to_xml #_dumpValue Cannot find  Double
+    √ should output a simple objectType node to xml
+nodeset_to_xml #_dumpValue Cannot find  Double
+nodeset_to_xml #_dumpValue Cannot find  Double
+    √ should output a instance of a new ObjectType  to xml
+    √ should output a instance of object with method  to xml
+
+  testing UAObjectType
+ ERROR  cannot find reference  HasSubtype <------------- HasSubtype ------------- ns=0;i=62               
+    √ should read Attribute IsAbstract on UAObjectType 
+    √ should read Attribute IsAbstract on Abstract UAObjectType 
+    √ UAObjectType#instantiate should be possible to instantiate a ObjectType (nodeid not specified)
+    √ UAObjectType#instantiate should be possible to instantiate a ObjectType and specify its nodeId)
+
+  testing ReferenceType
+    √ should find 'HierarchicalReferences'
+    √ HierarchicalReferences should have an Abstract attribute set to true 
+    √ Organizes should have an Abstract attribute set to true 
+    √ should find 'Organizes'
+    √ 'Organizes' should be a super type of 'HierarchicalReferences'
+    √ 'HasTypeDefinition' should *not* be a super-type of 'HierarchicalReferences'
+    √ 'HasTypeDefinition' should  be a super-type of 'NonHierarchicalReferences'
+    √ should return 4 refs for browseNode on RootFolder ,  referenceTypeId=null,!includeSubtypes  
+    √ should return 1 refs for browseNode on RootFolder ,  NonHierarchicalReferences, includeSubtypes  
+    √ should return 3 refs for browseNode on RootFolder , Organizes ,!includeSubtypes  
+    √ should return 0 refs for browseNode on RootFolder , HierarchicalReferences ,!includeSubtypes  
+    √ should return 3 refs for browseNode on RootFolder , HierarchicalReferences , includeSubtypes  
+    √ should return 6 refs for browseNode on ServerStatus (BrowseDirection.Forward)
+    √ ServerStatus parent shall be Server
+             browseNames :  Server
+    √ should return 1 refs for browseNode on ServerStatus (BrowseDirection.Reverse)
+    √ should return 7 refs for browseNode on ServerStatus (BrowseDirection.Both)
+    √ should return 1 refs for browseNode on ServerStatus (BrowseDirection.Reverse)
+    √ should return 1 refs for browseNode on Server (BrowseDirection.Forward) and NodeClass set to Method
+    √ ReferenceType should have a toString (HierarchicalReferences)
+    √ ReferenceType should have a toString (Organizes)
+    √ ReferenceType#getAllSubtypes should extract all possible referenceType 
+ CYCLE findReferencesEx slow op/s 7291.947 count = 1459
+ CYCLE findReferencesEx fast op/s 796921.3 count = 159385
+ Fastest is findReferencesEx fast
+ Speed Up : x 109
+    √ BaseNode#findReferencesEx should be fast  (422ms)
+
+   improving performance of isSupertypeOf
+    √ should ensure that optimized version of isSupertypeOf produce same result as brute force version
+ CYCLE isSupertypeOf slow op/s 257.1513 count = 301
+ CYCLE isSupertypeOf fast op/s 1881.164 count = 377
+ Fastest is isSupertypeOf fast
+ Speed Up : x 7
+    √ should ensure that optimized version of isSupertypeOf is really faster that brute force version (1372ms)
+A  NonHierarchicalReferences/NonHierarchicalReferences ns=0;i=32
+    √ ZZ should ensure that fast version isSupertypeOf shall update its cache when new References are added 
+
+  testing Variables 
+    √ ZZ1- a variable should return attributes with  the expected data type 
+
+  Address Space : add Variable :  testing various variations for specifying dataType
+    √ AddressSpace#addVariable should accept a dataType as String
+    √ AddressSpace#addVariable should accept a dataType as DataTypeId value
+    √ AddressSpace#addVariable should accept a dataType as a NodeId object
+    √ AddressSpace#addVariable should accept a dataType as a NodeId string
+    √ AddressSpace#addVariable({propertyOf:..}) should accept a typeDefinition as a String
+    √ AddressSpace#addVariable should accept a typeDefinition as a VariableTypeId value
+    √ AddressSpace#addVariable should accept a typeDefinition as a NodeId object
+    √ AddressSpace#addVariable should accept a typeDefinition as a NodeId string
+    √ AddressSpace#addVariable should throw if typeDefinition is invalid
+
+  testing Variable#bindVariable
+    testing Variable#bindVariable -> Getter
+      √ T1 should create a static read only variable ( static value defined at construction time)
+Value1 DataValue:
+   value:           Variant(Scalar<Double>, value: 100)
+   statusCode:      Good (0x00000)
+   serverTimestamp: 2017-05-01T22:18:04.639Z $ 0
+   sourceTimestamp: 2017-05-01T22:18:04.639Z $ 0
+Value2 DataValue:
+   value:           Variant(Scalar<Double>, value: 100)
+   statusCode:      Good (0x00000)
+   serverTimestamp: 2017-05-01T22:18:04.639Z $ 0
+   sourceTimestamp: 2017-05-01T22:18:04.639Z $ 0
+Value3 DataValue:
+   value:           Variant(Scalar<Double>, value: 300)
+   statusCode:      Good (0x00000)
+   serverTimestamp: 2017-05-01T22:18:04.640Z $ 0
+   sourceTimestamp: 2017-05-01T22:18:04.640Z $ 0
+      √ should create a variable with synchronous get, dataValue shall change only if 'get' returns a different value
+      √ T2 should create a variable with synchronous get and set functor
+      √ T3 should create a read only variable with a timestamped_get
+      √ T4 should create a read only variable with a refreshFunc
+    testing Variable#bindVariable -> Setter
+      √ Q1 should create a variable with a sync  setter
+      √ Q2 should create a variable with a async  setter
+      √ Q3 should create a variable with a sync timestamped setter
+      √ Q4- issue#332 should create a variable with async setter and an async getter (308ms)
+
+  testing Variable#writeValue Scalar
+    √ should write a double in a Duration 
+
+  testing Variable#writeValue Array
+    √ A1 should write an array 
+    √ A2 should write an portion of an array 
+    √ A3 should write statusCode= GoodClamped and retrieve statusCode GoodClamped
+    √ A4 should write statusCode= GoodClamped and retrieve statusCode GoodClamped with index range
+    √ should write sourceTimestamp and retrieve sourceTimestamp
+
+  testing Variable#writeValue on Integer
+    √ Z1 should not be possible to write a Byte Value into an integer Variable
+    √ Z2 should not be possible to write a UInt16 Value into an integer Variable
+    √ Z3 should not be possible to write a UInt32 Value into an integer Variable
+    √ Z2 should not be possible to write a UInt16 Value into an Integer Variable
+    √ Z3 should not be possible to write a UInt64 Value into an integer Variable
+    √ Z1 should not be possible to write a Byte Value into an Integer Variable
+    √ Z1 should not be possible to write a Byte Value into an Int32 Variable
+    √ Z2 should not be possible to write a UInt16 Value into an Int32 Variable
+    √ Z3 should not be possible to write a UInt32 Value into an Int32 Variable
+    √ Z1 should not be possible to write a SByte Value into an Int32 Variable
+    √ Z2 should not be possible to write a Int16 Value into an Int32 Variable
+    √ Z3 should not be possible to write a UInt32 Value into an Int32 Variable
+    √ Z3 should  possible to write a Int32 Value into an Int32 Variable
+
+  testing UAVariable 
+    √ UAVariable#clone should clone a variable
+    √ UAVariable#readValue should return an error if value is not readable
+    √ UAVariable#readValueAsync should return an error if value is not readable
+err= Error: Something goes wrong here
+    at Timeout._onTimeout (C:\KIT\GitRepository\node-opcua\test\address_space\test_variable.js:1395:34)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+    √ UAVariable#readValueAsync should cope with faulty refreshFunc -- calling callback with an error (110ms)
+func readValueAsync has failed 
+ stack Error: Something goes wrong here
+    at UAVariable.refreshFunc (C:\KIT\GitRepository\node-opcua\test\address_space\test_variable.js:1417:27)
+    at UAVariable.self.asyncRefresh (C:\KIT\GitRepository\node-opcua\lib\address_space\ua_variable.js:951:26)
+    at UAVariable.readValueAsync (C:\KIT\GitRepository\node-opcua\lib\address_space\ua_variable.js:1381:14)
+    at Context.<anonymous> (C:\KIT\GitRepository\node-opcua\test\address_space\test_variable.js:1421:24)
+    at callFnAsync (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runnable.js:368:21)
+    at Test.Runnable.run (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runnable.js:318:7)
+    at Runner.runTest (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:444:10)
+    at C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:550:12
+    at next (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:361:14)
+    at C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:371:7
+    at next (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:295:14)
+    at Immediate.<anonymous> (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:339:5)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+err= Error: Something goes wrong here
+    at UAVariable.refreshFunc (C:\KIT\GitRepository\node-opcua\test\address_space\test_variable.js:1417:27)
+    at UAVariable.self.asyncRefresh (C:\KIT\GitRepository\node-opcua\lib\address_space\ua_variable.js:951:26)
+    at UAVariable.readValueAsync (C:\KIT\GitRepository\node-opcua\lib\address_space\ua_variable.js:1381:14)
+    at Context.<anonymous> (C:\KIT\GitRepository\node-opcua\test\address_space\test_variable.js:1421:24)
+    at callFnAsync (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runnable.js:368:21)
+    at Test.Runnable.run (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runnable.js:318:7)
+    at Runner.runTest (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:444:10)
+    at C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:550:12
+    at next (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:361:14)
+    at C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:371:7
+    at next (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:295:14)
+    at Immediate.<anonymous> (C:\KIT\GitRepository\node-opcua\node_modules\mocha\lib\runner.js:339:5)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+    √ UAVariable#readValueAsync should cope with faulty refreshFunc - crashing inside refreshFunc
+    √ UAVariable#readValueAsync  should be reentrant (103ms)
+    √ UAVariable#writeAttribute 
+    √ UAVariable#setValueFromSource should cause 'value_changed' event to be raised (209ms)
+ ERROR  cannot find reference  HasSubtype <------------- HasSubtype ------------- ns=0;i=62               
+
+  testing UAVariableType
+    √ should read Attribute IsAbstract on UAVariableType 
+    √ should read Attribute IsAbstract on Abstract UAVariableType 
+    √ UAVariableType#instantiate should be possible to instantiate a VariableType (nodeid not specified)
+    √ UAVariableType#instantiate should be possible to instantiate a VariableType and specify its nodeId)
+    √ UAVariableType#instantiate with componentOf
+    √ UAVariableType#instantiate with organizedBy
+    √ UAVariableType#instantiate with valueRank and arrayDimension
+    √ should provide a mechanism to customize newly created instance
+
+  Testing the client publish engine
+    √ a client should send a publish request to the server for every new subscription
+    √ a client should keep sending a new publish request to the server after receiving a notification, when a subscription is active (54ms)
+    √ a client should stop sending publish request to the server after receiving a notification, when there is no more registered subscription  (46ms)
+    √ a client should acknowledge sequence numbers received in PublishResponse in next PublishRequest
+    √ a client publish engine shall adapt the timeoutHint of a publish request to take into account the number of awaiting publish requests 
+
+  testing ClientSecureChannelLayer 
+    √ should create a ClientSecureChannelLayer (44ms)
+    √ should close a ClientSecureChannelLayer
+    √ should use token provided by server in messages
+    √ should callback with an error if performMessageTransaction is called before connection (1004ms)
+    √ should expose the total number of bytes read and written
+
+  Testing AccessLevelFlag
+    √ should create a access level flags from a string
+    √ should create a flag with no bit set
+    √ should create a flag with no bit set -> 0
+    √ should have a accessLevel Flag Basic Type
+    √ should create an object with access_level
+    √ should create an object with access_level defined as a 'string'
+    √ should create an object with access_level defined as a Int8'
+    √ should persist a accessLevel Flag
+    √ should provide a easy way to check if a flag is set or not
+
+  convertJavaScriptToVariant
+    √ should convertJavaScriptToVariant
+
+  testing ArgumentList special encode/decode process
+    √ should raise an error when trying to **encode** a ArgumentList without a definition
+    √ should raise an error when trying to **decode** a ArgumentList without a definition
+    √ should encode/decode an ArgumentList (scalar)
+    √ should encode/decode an ArgumentList (array)
+    √ should encode/decode an ArgumentList with a complex definition
+
+  DataValue
+    √ should create a empty DataValue and encode it as a 1-Byte length block
+    √ should create a DataValue with string variant and encode/decode it nicely 
+    √ should create a DataValue with string variant and some date and encode/decode it nicely
+    √ should create a DataValue with string variant and all dates and encode/decode it nicely
+    √ DataValue#toString
+    √ DataValue - extractRange on a Float Array
+    √ DataValue - extractRange on a String
+    √ DataValue - extractRange on a ByteString
+
+  test DeadBand Checker
+    √ Scalar - DeadbandType.None - should detect difference between two Int scalar
+    √ Scalar - DeadbandType.Absolute - should detect difference between two Int scalar
+    √ Scalar - DeadbandType.Percent - should detect difference between two Int scalar
+    √ Array  - DeadbandType.None - should detect difference between two Int scalar
+    √ Array  - DeadbandType.Absolute - should detect difference between two Int scalar
+    √ Scalar - DeadbandType.None - should detect difference between two Int64 scalar
+    √ Scalar - DeadbandType.Absolute - should detect difference between two Int64 scalar
+
+  DiagnosticInfo
+    √ should encode default DiagnosticInfo in a single byte
+    √ should encode default DiagnosticInfo with only symbolicId in 5-bytes
+    √ should encode DiagnosticInfo with symbolicId and locale in 9-bytes
+    √ should encode DiagnosticInfo with InnerStatusCode in 5-bytes
+    √ should encode DiagnosticInfo with a default innerDiagnosticInfo in 2-bytes
+    √ should encode default DiagnosticInfo with an innerDiagnosticInfo  containing a 5 car string in 11-bytes
+    √ should encode DiagnosticInfo with SymbolicId
+    √ should encode DiagnosticInfo with LocalizedText
+    √ should encode DiagnosticInfo with NamespaceUri
+    √ should encode DiagnosticInfo with NamespaceUri and LocalizedText and SymbolicId
+
+  testing ExpandedNodeId
+    √ should create a ExpandedNodeId from a integer
+    √ should create a ExpandedNodeId from a integer
+    √ should create a ExpandedNodeId from a ExpandedNodeId
+    √ should throw when calling makeExpandedNodeId with bad argument
+    √ ExpandedNodeId#toString
+    √ should create a ExpandedNodeId from a NodeId
+    √ coerceExpandedNodeId should coerce 'i=10'
+    √ coerceExpandedNodeId should coerce an ExpandedNodeId
+
+  GUID
+    √ emptyGuid should be a valid GUID
+    √ should detect strings that looks like GUID
+    √ should accept letters in lower case in GUID strings
+    √ should not detect ns=0;g=1E14849E-3744-470d-8C7B-5F9110C2FA32 as a GUID
+
+  Testing IntegerId
+    √ should persist a IntegerId === 0
+    √ should persist a IntegerId !== 0
+
+  LocalizedText
+    √ should create a LocalizeText
+    √ should encode and decode a LocalizeText that have both text and locale
+    √ should encode and decode a LocalizeText that have text but no locale
+    √ should encode and decode a LocalizeText that have no text but a locale
+    √ #coerceLocalizedText - null
+    √ #coerceLocalizedText - string
+    √ #coerceLocalizedText - LocalizedText
+
+  testing NodeIds
+    √ should create a NUMERIC nodeID
+    √ should create a NUMERIC nodeID with the largest possible values
+    √ should raise an error for  NUMERIC nodeID with invalid  values
+    √ should create a STRING nodeID
+    √ should create a OPAQUE nodeID
+
+  testing coerceNodeId
+    √ should coerce a string of a form 'i=1234'
+    √ should coerce a string of a form 'ns=2;i=1234'
+    √ should coerce a string of a form 's=TemperatureSensor' 
+    √ should coerce a string of a form 'ns=2;s=TemperatureSensor' 
+    √ should coerce a string of a form 'ns=4;s=Test32;datatype=Int32'  (Mika)
+    √ should coerce a integer
+    √ should coerce a OPAQUE buffer as a BYTESTRING
+    √ should coerce a OPAQUE buffer in a string ( with namespace ) 
+    √ should coerce a OPAQUE buffer in a string ( without namespace ) 
+    √ should coerce a GUID node id (without namespace)
+    √ should coerce a GUID node id (with namespace)
+    √ should not coerce a malformed string to a nodeid
+    √ should detect empty Numeric NodeIds
+    √ should detect empty String NodeIds
+    √ should detect empty Opaque NodeIds
+    √ should detect empty GUID NodeIds
+    √ should convert an empty NodeId to  <empty nodeid> string
+    √ should coerce a string nodeid containing special characters
+
+  #sameNodeId
+    √ should be true  : #sameNodeId('ns=3;i=2','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=3;i=2','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=3;i=2');
+    √ should be true  : #sameNodeId('ns=4;i=2','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=4;i=2','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=4;i=2');
+    √ should be true  : #sameNodeId('ns=3;i=4','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=3;i=4','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=3;i=4');
+    √ should be true  : #sameNodeId('ns=300;i=4','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=300;i=4','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=300;i=4');
+    √ should be true  : #sameNodeId('ns=2;i=23','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=2;i=23','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=2;i=23');
+    √ should be true  : #sameNodeId('ns=4;s=TemperatureSensor','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=4;s=TemperatureSensor','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=4;s=TemperatureSensor');
+    √ should be true  : #sameNodeId('ns=4;s=A very long string very very long string','ns=4;s=A very long string very very long string');
+    √ should be false : #sameNodeId('ns=4;s=A very long string very very long string','ns=4;b=415a45525459');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=3;i=2');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=4;i=2');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=3;i=4');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=300;i=4');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=2;i=23');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=4;s=TemperatureSensor');
+    √ should be false : #sameNodeId('ns=4;b=415a45525459','ns=4;s=A very long string very very long string');
+    √ should be true  : #sameNodeId('ns=4;b=415a45525459','ns=4;b=415a45525459');
+ CYCLE sameNodeIdOld op/s 905.5989 count = 91
+ CYCLE sameNodeId op/s 394.2140 count = 40
+ Fastest is sameNodeIdOld
+    √ should implement a efficient sameNodeId  (203ms)
+
+  Type coercion at construction time
+    √ should coerce a nodeId at construction 
+
+  testing resolveNodeId
+    √ should resolve RootFolder to 'ns=0;i=84' 
+    √ should resolve ObjectsFolder to 'ns=0;i=85' 
+    √ should resolve ServerType_NamespaceArray to 'ns=0;i=2006' 
+    √ should resolve FolderType to 'ns=0;i=61' 
+    √ should resolve AnalogItemType to 'ns=0;i=2368' 
+    √ should resolve HierarchicalReferences to 'ns=0;i=33' 
+
+  testing NodeId coercing bug 
+    √ should handle strange string nodeId 
+
+  testing NodeId.displayText
+    √ should provide a richer display text when nodeid is known
+
+  Testing numerical range
+    √ should construct an empty NumericRange
+    √ should construct a NumericRange from a integer
+    √ should construct a NumericRange from a integer
+    √ should construct a NumericRange with low and high bound
+    √ should  be an InvalidRange if low bound is greater than high bound
+    - should be an ArrayRange if low bound === high bound
+    √ should throw an exception if high bound is crap
+    √ should construct a NumericRange with a array containing low and high bound
+    √ should construct a NumericRange from a string containing an integer
+    √ should construct a NumericRange from a string containing a simple range
+    √ should be an InvalidRange when constructed with a string with invalid range
+    √ should be an InvalidRange when constructed with a string with 3 values separated with :
+    √ should be an InvalidRange when constructed with two values ( high ,low)
+    √ should be an InvalidRange when constructed with two values ( negative ,negative)
+    √ should be an InvalidRange when constructed with a single negative numb
+    √ should be an InvalidRange when constructed with a string with invalid array range (low==high) 
+    √ should be an InvalidRange when constructed with a string with invalid array range ( low > high )
+    √ should be an InvalidRange when constructed with a badly formed string '2-4' 
+    √ should be an InvalidRange when constructed with a badly formed string : '-2:0' 
+    MatrixRange
+      √ should be an MatrixRange when constructed with a matrix formed string : '1:3,4:5' 
+      √ should be an MatrixRange when constructed with a matrix formed string : '1,2' 
+      √ should be an Matrix when constructed with  string : '1,2:3' 
+      √ should be an MatrixRange when constructed with   string : '1:2,2' 
+    extracting ranges from string
+      √ it should extract a single element with a single value range
+      √ it should extract a sub array with the requested element with a simple array range
+      √ it should extract a sub matrix when indexRange is a NumericRange.Matrix
+    extracting ranges from ByteString
+      √ it should extract a single element with a range defined with a individual integer
+      √ it should extract a sub array with the requested element with a simple array range
+      √ it should handle the case where the high value of the range is bigger than the array size
+      √ it should handle the case where both high value and low value range are bigger than the array size
+    extracting ranges from array
+      √ it should extract a single element with a range defined with a individual integer
+      √ it should extract a sub array with the requested element with a simple array range
+      √ it should extract a sub array with the requested element with a empty NumericRange
+      √ it should extract the last 3 elements of an array
+      √ it should return BadIndexRangeNoData  if single value Range is outside array boundary
+      √ should handle null array
+      √ should handle null array
+    extracting ranges from a typed array
+      √ Float32Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Float32Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Float32Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Float32Array Z4 - it should extract the last 3 elements of an array
+      √ Float32Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Float32Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Float32Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Float64Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Float64Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Float64Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Float64Array Z4 - it should extract the last 3 elements of an array
+      √ Float64Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Float64Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Float64Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Uint32Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Uint32Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Uint32Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Uint32Array Z4 - it should extract the last 3 elements of an array
+      √ Uint32Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Uint32Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Uint32Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Uint16Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Uint16Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Uint16Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Uint16Array Z4 - it should extract the last 3 elements of an array
+      √ Uint16Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Uint16Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Uint16Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Int16Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Int16Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Int16Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Int16Array Z4 - it should extract the last 3 elements of an array
+      √ Int16Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Int16Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Int16Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Int32Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Int32Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Int32Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Int32Array Z4 - it should extract the last 3 elements of an array
+      √ Int32Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Int32Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Int32Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Uint8Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Uint8Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Uint8Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Uint8Array Z4 - it should extract the last 3 elements of an array
+      √ Uint8Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Uint8Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Uint8Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Int8Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Int8Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Int8Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Int8Array Z4 - it should extract the last 3 elements of an array
+      √ Int8Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Int8Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Int8Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ BLOB Z1 - it should extract a single element with a range defined with a individual integer
+      √ BLOB Z2 - it should extract a sub array with the requested element with a simple array range
+      √ BLOB Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ BLOB Z4 - it should extract the last 3 elements of an array
+      √ BLOB Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ BLOB Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ BLOB Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+      √ Uint8Array Z1 - it should extract a single element with a range defined with a individual integer
+      √ Uint8Array Z2 - it should extract a sub array with the requested element with a simple array range
+      √ Uint8Array Z3 - it should extract a sub array with the requested element with a empty NumericRange
+      √ Uint8Array Z4 - it should extract the last 3 elements of an array
+      √ Uint8Array Z5 - it should return BadIndexRangeNoData if range is outside array boundary
+      √ Uint8Array Z6 - it should return BadIndexRangeInvalid if range is invalid
+      √ Uint8Array Z7 - it should return BadIndexRangeNoData if range is a MatrixRange and value is an array
+    setting range of an array
+      √ S1 - should replace the old array with the provided array when numeric range is empty
+      √ S2 - should replace a single element when numeric range is a single value
+      √ S3 - should replace a single element when numeric range is a simple range
+      √ S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ S5 - should replace a single element when numeric range is a single value matching the last element
+      √ S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ S8 - should write the last 3 elements of an array
+      √ S9 - should return BadIndexRangeNoData  if range is outside array boundary
+      √ S10 - should return BadIndexRangeInvalid  if range is invalid
+      √ S11 - should return BadIndexRangeInvalid if range does'nt match new array size
+    setting range of a typed  array
+      √ Float32Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Float32Array-S2 - should replace a single element when numeric range is a single value
+      √ Float32Array-S3 - should replace a single element when numeric range is a simple range
+      √ Float32Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Float32Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Float32Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Float32Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Float32Array-S8 - should write the last 3 elements of an array
+      √ Float32Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Float64Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Float64Array-S2 - should replace a single element when numeric range is a single value
+      √ Float64Array-S3 - should replace a single element when numeric range is a simple range
+      √ Float64Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Float64Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Float64Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Float64Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Float64Array-S8 - should write the last 3 elements of an array
+      √ Float64Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Uint32Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Uint32Array-S2 - should replace a single element when numeric range is a single value
+      √ Uint32Array-S3 - should replace a single element when numeric range is a simple range
+      √ Uint32Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Uint32Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Uint32Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Uint32Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Uint32Array-S8 - should write the last 3 elements of an array
+      √ Uint32Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Uint16Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Uint16Array-S2 - should replace a single element when numeric range is a single value
+      √ Uint16Array-S3 - should replace a single element when numeric range is a simple range
+      √ Uint16Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Uint16Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Uint16Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Uint16Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Uint16Array-S8 - should write the last 3 elements of an array
+      √ Uint16Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Int16Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Int16Array-S2 - should replace a single element when numeric range is a single value
+      √ Int16Array-S3 - should replace a single element when numeric range is a simple range
+      √ Int16Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Int16Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Int16Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Int16Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Int16Array-S8 - should write the last 3 elements of an array
+      √ Int16Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Int32Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Int32Array-S2 - should replace a single element when numeric range is a single value
+      √ Int32Array-S3 - should replace a single element when numeric range is a simple range
+      √ Int32Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Int32Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Int32Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Int32Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Int32Array-S8 - should write the last 3 elements of an array
+      √ Int32Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Uint8Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Uint8Array-S2 - should replace a single element when numeric range is a single value
+      √ Uint8Array-S3 - should replace a single element when numeric range is a simple range
+      √ Uint8Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Uint8Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Uint8Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Uint8Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Uint8Array-S8 - should write the last 3 elements of an array
+      √ Uint8Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Int8Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Int8Array-S2 - should replace a single element when numeric range is a single value
+      √ Int8Array-S3 - should replace a single element when numeric range is a simple range
+      √ Int8Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Int8Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Int8Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Int8Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Int8Array-S8 - should write the last 3 elements of an array
+      √ Int8Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ BLOB-S1 - should replace the old array with the provided array when numeric range is empty
+      √ BLOB-S2 - should replace a single element when numeric range is a single value
+      √ BLOB-S3 - should replace a single element when numeric range is a simple range
+      √ BLOB-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ BLOB-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ BLOB-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ BLOB-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ BLOB-S8 - should write the last 3 elements of an array
+      √ BLOB-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+      √ Int8Array-S1 - should replace the old array with the provided array when numeric range is empty
+      √ Int8Array-S2 - should replace a single element when numeric range is a single value
+      √ Int8Array-S3 - should replace a single element when numeric range is a simple range
+      √ Int8Array-S4 - should replace a single element when numeric range is a pair of values matching the first two elements
+      √ Int8Array-S5 - should replace a single element when numeric range is a single value matching the last element
+      √ Int8Array-S6 - should replace a single element when numeric range is a pair of values matching the last two elements
+      √ Int8Array-S7 - should replace a single element when numeric range is a pair of values matching the whole array
+      √ Int8Array-S8 - should write the last 3 elements of an array
+      √ Int8Array-S9 - should return BadIndexRangeNoData if range is a matrix range and value is an array
+     encoding / decoding
+      √ binary : should persist an object with a numeric range - empty
+      √ binary : should persist an object with a numeric range - value pair
+      √ binary : should persist an object with a numeric range - single value
+      √ binary : should persist an object with a numeric range - Invalid
+      √ binary : should persist an object with a numeric range - MatrixRange - type 1
+      √ binary : should persist an object with a numeric range - MatrixRange - type 2
+      √ json : should persist an object with a numeric range - empty
+      √ json : should persist an object with a numeric range - value pair
+      √ json : should persist an object with a numeric range - single value
+      √ json : should persist an object with a numeric range - Invalid
+      √ json : should persist an object with a numeric range - MatrixRange - type 1
+      √ json : should persist an object with a numeric range - MatrixRange - type 2
+    Operations
+      √ '<empty>' '<empty>' should  overlap 
+      √ '<empty>' '5:6' should  overlap 
+      √  '5:6' '<empty>' should  overlap 
+      √  '5' '8' should not overlap 
+      √  '5' '5' should not overlap 
+      √ '1:2' '5:6' should not overlap 
+      √ '1:6' '3:8' should overlap 
+      √ '1:6' '3:4' should overlap 
+      √ '3:4' '1:10' should overlap 
+      √ '1:2' '2:6' should overlap 
+
+  QualifiedName
+    √ should construct a qualified name
+    √ testing qualified name toString
+    √ testing qualified name toString
+    √ should coerce a string into a qualified name 
+    √ should coerce a qualified name  into a qualified name 
+    √ should coerce a null object  into a null qualified name 
+    √ QualifiedName#isEmpty
+
+  testing status code manipulation
+    √ should create BadNodeIdExists
+    √ should create BadAttributeIdInvalid
+    √ should create GoodWithOverflowBit
+    √ should encode and decode a status code
+    √ statusCode should implement a special toString
+    √ should create Uncertain_InitialValue
+    √ GoodWithOverflowBit
+    √ should be possible to set SemanticChanged bit on a status code
+    √ should be possible to set the Overflow bit on a status code
+    √ should be possible to set the Overflow and SemanticChanged bits on a status code
+    √ should be possible to encode and decode a statusCode that have a extra information bit
+    √ should be possible to create a modifiable StatusCode from a ModifiableStatusCode
+    √ should fail to set a extra information bit on a standard StatusCode
+
+  Variant
+    √ should create a empty Variant
+    √ should create a Scalar UInt32 Variant
+    √ should create a Scalar UInt64 Variant
+    √ should create a Scalar LocalizedText Variant 1/2
+    √ should create a Scalar LocalizedText Variant 2/2
+    √ should create a Scalar QualifiedName Variant 1/2
+    √ should create a Scalar QualifiedName Variant 2/2
+    √ should create a Scalar ByteString  Variant - null
+    √ should create a Scalar ByteString  Variant - empty buffer
+    √ should create a Scalar ByteString  Variant - 3 bytes
+    √ should create a Scalar String  Variant
+    √ should create a Array String Variant
+    √ should create a Array QualifiedName Variant
+    √ should create a Array of GUID Variant
+    √ should detect invalid SByte Variant
+    √ should detect invalid Array<Int32> Variant
+    √ should create a Variant as a Matrix (2x3) of UInt32 
+    √ should raise an exception when construction a Matrix with incorrect element size
+    √ should create a Array ByteString  Variant 
+    √ should create a Array UInt64 Variant
+
+  Variant - Analyser
+    √ should analyze variant
+    √ should encode/decode variant (46ms)
+ t1 = create variant    40.56500000000233
+ t2 = binaryStoreSize   0.20300000000133878
+ t3 = new BinaryStream  0.05700000000069849
+ t3 = encode            183.88499999999476
+    √ should encode/decode a very large array of Float - 1 (225ms)
+    √ should encode/decode a very large array of Float (2745ms)
+    array size =  512000
+ Fastest is Variant.encode
+ Speed Up : x 1
+    √ should check the performance of encode/decode a very large array of Float (899ms)
+
+  benchmarking variant encode
+ Fastest is Variant.encode
+ Speed Up : x 15
+    √ should verify that current Variant.encode method is better than old implementation (204ms)
+
+  benchmarking float Array encode/decode
+ slowest is test1
+ Fastest is test4
+ Speed Up : x 8
+    √ should check which is the faster way to encode decode a float (627ms)
+
+  Variant with Advanced Array
+    √ should automatically detect that variant is an array when rrayType is missing 
+    √ should be possible to handle an Float array  with a Float32Array
+    √ should be possible to encode/decode an subarray of Float32Array
+    √ should be possible to read a sub matrix of a array of byte strings
+
+  Variant with enumeration
+    √ should fail to create a variant from a enumeration item if dataType is not Int32
+    √ should create a variant from a enumeration item
+    - should not be necessary to specify the dataType for  a variant containing  enumeration item
+    √ should create a variant with builtin type 'Duration'
+    √ should create a variant with builtin type 'ByteString'
+    √ should create a variant copy (with it's own array) 
+
+  testing sameVariant Performance
+    √ #sameVariant with Variant(Array<String>, null)
+    √ #sameVariant with Variant(Array<UInt32>, null)
+    √ #sameVariant with Variant(Scalar<String>, value: Hello)
+    √ #sameVariant with Variant(Scalar<String>, value: HelloWorld)
+    √ #sameVariant with Variant(Scalar<Double>, value: 42)
+    √ #sameVariant with Variant(Scalar<Float>, value: 42)
+    √ #sameVariant with Variant(Scalar<Int32>, value: 42)
+    √ #sameVariant with Variant(Scalar<UInt32>, value: 42)
+    √ #sameVariant with Variant(Scalar<Double>, value: 43)
+    √ #sameVariant with Variant(Scalar<Float>, value: 43)
+    √ #sameVariant with Variant(Scalar<Int32>, value: 43)
+    √ #sameVariant with Variant(Scalar<UInt32>, value: 43)
+    √ #sameVariant with Variant(Array<String>, l= 2, value=[Hello,World])
+    √ #sameVariant with Variant(Array<Double>, l= 2, value=[42,43])
+    √ #sameVariant with Variant(Array<Float>, l= 2, value=[42,43])
+    √ #sameVariant with Variant(Array<Int32>, l= 2, value=[42,43])
+    √ #sameVariant with Variant(Array<UInt32>, l= 2, value=[42,43])
+    √ #sameVariant with Variant(Array<Double>, l= 2, value=[43,43])
+    √ #sameVariant with Variant(Array<Float>, l= 2, value=[43,43])
+    √ #sameVariant with Variant(Array<Int32>, l= 2, value=[43,43])
+    √ #sameVariant with Variant(Array<UInt32>, l= 2, value=[43,43])
+    √ #sameVariant with Variant(Array<Int32>, l= 16, value=[43,43,1,2,3,4,5,6,7,8,...])
+    √ #sameVariant with Variant(Array<Int32>, l= 16, value=[43,43,1,2,3,4,5,6,7,8,...])
+    √ #sameVariant with Variant(Array<Int32>, l= 10000, value=[5595,4298,1075,3220,620,6698,453,3675,3169,5850,...])
+    √ #sameVariant with null
+ CYCLE fast sameVariant op/s 39745.82 count = 39746
+ CYCLE slow sameVariant op/s 165.8391 count = 167
+ Fastest is fast sameVariant
+ Speed Up : x 239
+    √ sameVariant should be very efficient  (2014ms)
+
+  DataAccess
+    √ should find a BaseDataVariableType in the addressSpace
+    √ should find a DataItemType in the addressSpace
+    √ should find a ArrayItemType in the addressSpace
+    √ should find a AnalogItemType in the addressSpace
+    √ should find a DiscreteItemType in the addressSpace
+    √ should find a TwoStateDiscreteType in the addressSpace
+    √ should find a MultiStateDiscreteType in the addressSpace
+    √ should find a MultiStateValueDiscreteType in the addressSpace
+    √ should find a EUInformation in the addressSpace
+    √ should find a Range in the addressSpace
+    √ should have a UAVariableType XYArrayItemType
+    √ should have a ImageItemType 
+    √ should have a CubeItemType 
+    √ should encode and decode a string containing fancy characters
+    AnalogDataItem
+      √ should add an analog data item in the addresss_space
+      √ Writing a value exceeding InstrumentRange shall return BadOutOfRange
+      √ Writing a value within InstrumentRange shall return Good
+    PercentDeadband
+      √ should provide a mechanism to operate PercentDeadband 
+    TwoStateDiscreteType
+      √ should add a TwoStateDiscreteType variable
+    MultiStateDiscreteType
+      √ MultiStateDiscreteType should not be abstract
+      √ should add a MultiStateDiscreteType variable
+      edge case tests
+        √ writing a value exceeding EnumString length shall return BadOutOfRange
+        √ writing a value within EnumString length shall return Good
+    MultiStateValueDiscreteType
+      √ MultiStateValueDiscreteType should not be abstract
+      √ should add a MultiStateValueDiscreteType variable - form 1
+      √ should add a MultiStateValueDiscreteType variable - form 2
+      √ ZZ2 should instantiate a DataType containing a MultiStateValueDiscreteType
+      edge case tests
+        √ writing a value not in the EnumValues mapshall return BadOutOfRange
+DataValue:
+   value:           Variant(Scalar<UInt32>, value: 255)
+   statusCode:      Good (0x00000)
+   serverTimestamp: 2017-05-01T22:18:14.781Z $ 0
+   sourceTimestamp: 2017-05-01T22:18:14.783Z $ 0
+DataValue:
+   value:           Variant(Scalar<LocalizedText>, value: locale=null text=Blue)
+   statusCode:      Good (0x00000)
+   serverTimestamp: 2017-05-01T22:18:14.783Z $ 1
+   sourceTimestamp: 2017-05-01T22:18:14.783Z $ 1
+        √ writing a value within EnumValues shall return Good
+        √ changing  MultiStateVariable value shall change valueAsText accordingly
+    YArrayItemType
+      √ YArrayItemType should not be abstract
+      √ should add a YArrayItem
+      √ should add a YArrayItem with optional instrument range
+    AnalogDataItem and semantic changes
+      √ should emit a 'semantic_changed' event when EURange changes
+      √ should not emit a 'semantic_changed' event when value changes
+
+  commonCodeToUInt
+    √ commonCodeToUInt - CEL = °C = degree Celsius
+    √ commonCodeToUInt - LTR = l =  liter
+    √ commonCodeToUInt - BQL = Bq =  Becquerel = 27,027 x 1E-12 Ci  
+    √ commonCodeToUInt - CUR = Ci = Curie = 3,7 x 1E10 Bq 
+    √ commonCodeToUInt - A53 = eV = ElectronVolt = 1,602 177 33 1E-19 J  
+    √ commonCodeToUInt - B71 = MeV = megaelectronvolt = 1E6 eV  
+    √ commonCodeToUInt - STL = l = standard liter
+    √ commonCodeToUInt - A97 = hPa = hecto pascal
+
+  PercentDeadband with EURange
+    √ detect a change when range is [0,100], deadband 10% 
+    √ detect a change when range is [-100,100], deadband 10% 
+    √ detect a change when range is [-100,100], deadband 50% 
+
+  Discovery server
+_on_RegisterServerRequest error BadDiscoveryUrlMissing (0x80510000)
+    √ should fail to register server if discovery url is not specified (Bad_DiscoveryUrlMissing) (48ms)
+_on_RegisterServerRequest error BadInvalidArgument (0x80ab0000)
+    √ should fail to register server to the discover server if server type is Client (BadInvalidArgument)
+_on_RegisterServerRequest error BadServerNameMissing (0x80500000)
+    √ should fail to register server to the discover server if server name array is empty (BadServerNameMissing)
+ initialServerCount =  1
+servers[0].discoveryUrls opc.tcp://DESKTOP-C48FPKB:1235
+ registering server :  urn:NodeOPCUA-Server-default
+{ /*ApplicationDescription*/
+ applicationUri                /* String                           */: urn:DESKTOP-C48FPKB:NodeOPCUA-DiscoveryServer
+ productUri                    /* String                           */: SampleDiscoveryServer
+ applicationName               /* LocalizedText                    */: locale=null text=SampleDiscoveryServer
+ applicationType               /* ApplicationType                  */: DISCOVERYSERVER ( 3)
+ gatewayServerUri              /* String                           */: 
+ discoveryProfileUri           /* String                           */: 
+ discoveryUrls                 /* String                        [] */: [ opc.tcp://DESKTOP-C48FPKB:1235] (l=1)
+};
+ unregistering server :  urn:NodeOPCUA-Server-default
+    √ should register server to the discover server (226ms)
+
+  testing OPCUA-Service Discovery Endpoint
+    √ should answer a FindServers Request - without filters
+    √ should answer a FindServers Request - with filters
+    √ should answer FindServers Request and apply serverUris filter
+    √ should answer FindServers Request and apply endpointUri filter
+
+  ADI - Testing a server that exposes Analyser Devices
+    √ should have a DeviceType in DI namespace
+    √ should instantiate a DeviceType
+2:ParameterSet            ns=3;i=1167              Optional                 
+2:MethodSet               ns=3;i=1168              Mandatory                
+3:<GroupIdentifier>       ns=3;i=4449              OptionalPlaceholder      
+3:Configuration           ns=3;i=1178              Mandatory                
+3:Status                  ns=3;i=1179              Mandatory                
+3:ChannelStateMachine     ns=3;i=1180              Mandatory                
+3:<StreamIdentifier>      ns=3;i=4517              OptionalPlaceholder      
+3:<AccessorySlotIdentifie ns=3;i=4643              OptionalPlaceholder      
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz3:AnalyserChannelType
+2:ParameterSet            ns=2;i=12261             Optional                 
+2:MethodSet               ns=2;i=12262             Optional                 
+2:<GroupIdentifier>       ns=2;i=12292             OptionalPlaceholder      
+2:Identification          ns=2;i=12281             Optional                 
+2:Lock                    ns=2;i=12295             Optional                 
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz2:TopologyElementType
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzBaseObjectType
+
+           nodeId        : ns=1;i=1029
+           nodeClass     : Object
+           browseName    : __Channel2
+           displayName   : null __Channel2
+           description   : 
+           typeDefinition:  ns=3;i=1166 3:AnalyserChannelType
+           references    :   length =1
+                +-> ---- HasTypeDefinition[ns=0;i=40] ----> [ns=3;i=1166             ]3:AnalyserChannelType                    3:AnalyserChannelType
+          back_references:   length =5 ( references held by other nodes involving this node)
+                +-> ------- HasComponent[ns=0;i=47] ------> [ns=1;i=1030             ]2:ParameterSet                           2:ParameterSet
+                +-> ------- HasComponent[ns=0;i=47] ------> [ns=1;i=1034             ]2:MethodSet                              2:MethodSet
+                +-> ------- HasComponent[ns=0;i=47] ------> [ns=1;i=1048             ]3:Configuration                          3:Configuration
+                +-> ------- HasComponent[ns=0;i=47] ------> [ns=1;i=1049             ]3:Status                                 3:Status
+                +-> ------- HasComponent[ns=0;i=47] ------> [ns=1;i=1050             ]3:ChannelStateMachine                    3:ChannelStateMachine
+2:ParameterSet
+2:MethodSet
+3:Configuration
+3:Status
+3:ChannelStateMachine
+    √ should instantiate a AnalyserChannelType
+    √ should have a AnalyserDeviceType
+    √ should have a AnalyserDeviceType v2
+    √ should create a analyser device
+ cannot find type definition 0
+    √ should have a AnalyserDeviceStateMachineType (334ms)
+    √ ZZ1 should retrieve the AnalyserChannel_OperatingModeSubStateMachineType
+    √ ZZ2 should retrieve the AnalyserChannel_OperatingModeExecuteSubStateMachineType
+
+  testing monitoring Executable flags on methods
+A  NonHierarchicalReferences/NonHierarchicalReferences ns=0;i=32
+   FlowTo/FlowFrom ns=1;i=1000
+A  NonHierarchicalReferences/NonHierarchicalReferences ns=0;i=32
+ cannot find type definition 0
+    √ #187 ......  (1436ms)
+
+  testing AnalogItem on client side
+    √ readUAAnalogItem should extract all properties of a UAAnalogItem 
+    √ readUAAnalogItem should return an error if not doesn't exist
+      ns=1;s=TemperatureAnalogItem-Definition Definition
+      ns=1;s=TemperatureAnalogItem-ValuePrecision ValuePrecision
+      ns=1;s=TemperatureAnalogItem-EURange EURange
+      ns=1;s=TemperatureAnalogItem-InstrumentRange InstrumentRange
+      ns=1;s=TemperatureAnalogItem-EngineeringUnits EngineeringUnits
+propertyId =  ns=1;s=TemperatureAnalogItem-EURange
+    √ should read the EURange property of an analog item
+
+  testing the server ability to deny client session request (server with maxAllowedSessionNumber = 1)
+ServerSession#_createSessionObjectInAddressSpace : no object folder
+Too Many Sessions : BadTooManySessions (0x80560000)
+warning : disconnection : closing pending sessions
+ServerSession#_createSessionObjectInAddressSpace : no object folder
+    √ should accept only one session at a time
+warning : disconnection : closing pending sessions
+
+  NodeCrawler after write
+Starting first
+first null
+read success
+starting second
+NodeId {
+  identifierType: { [Number: 1] key: 'NUMERIC', value: 1 },
+  value: 2294,
+  namespace: 0 }
+res { [Number: 0] value: 0, description: 'No Error', name: 'Good' }
+Starting third
+second null
+read success
+    √ should crawl, write to node, and crawl again (6945ms)
+
+  testing Client-Server -Event
+    √ should raise a close event once on normal disconnection (42ms)
+    √ Client (not reconnecting) should raise a close event with an error when server initiates disconnection (129ms)
+    √ Client (reconnecting)  should raise a close event with an error when server initiates disconnection (after reconnecting has failed) (2045ms)
+
+  testing basic Client-Server communication
+    √ T1 - a client should connect to a server and disconnect 
+warning ! client sent helloMessage.protocolVersion = 0xdeadbeef  whereas server protocolVersion is 0x0
+    √ T2 - a server should not accept a connection when the protocol version is incompatible
+    √ T3 - a client shall be able to create a session with a anonymous token (60ms)
+    √ T4 - a client shall be able to reconnect if the first connection has failed (2025ms)
+    √ T5 - a client shall be able to connect & disconnect many times (88ms)
+    √ T6 - a client shall raise an error when trying to create a session on an invalid endpoint
+    √ T7 - calling connect on the client twice shall return a error the second time
+    Browse-Read-Write Services
+      √ T8-1 - should browse RootFolder
+      √ T8-2 - browse should return BadReferenceTypeIdInvalid if referenceTypeId is invalid
+      √ T8-3 - should read a Variable
+      √ T8-11 - #ReadRequest : server should return BadNothingToDo when nodesToRead is empty
+      √ T8-12 - #ReadRequest : server should return BadTimestampsToReturnInvalid when timestampsToReturn is Invalid
+      √ T8-13 - should readAllAttributes
+      √ T8-14 - #readVariableValue should return a appropriate status code if nodeid to read doesn't exists
+      √ T8-15 - #read should return BadNothingToDo when reading an empty nodeToRead array
+      √ T8-15b - #read :should return BadNothingToDo if nodesToRead is empty
+      √ T8-15c - #read :should return BadNothingToDo if nodesToRead is null
+      √ T8-16 - #read should return BadMaxAgeInvalid when Negative MaxAge parameter is specified
+      √ T8-17 - #readVariableValue - should read the TemperatureTarget value
+      √ T8-20 - #writeSingleNode -  should write the TemperatureTarget value
+      √ T9-1 - Server should expose a 'Server' object in the 'Objects' folder
+      √ T9-2 - Server should expose 'Server_NamespaceArray' variable 
+      √ T9-3 - ServerStatus object shall be accessible as a ExtensionObject
+
+  testing ability for client to reconnect when server close connection
+    √ TR1 - should be possible to reconnect client after the server closed the connection (2877ms)
+    √ TR2 - a client should be able to reconnect automatically to the server when the server restarts after a server failure (2674ms)
+    √ TR2a - a client should be able to reconnect automatically to the server when the server restarts after a server failure (5234ms)
+    √ TR3 - it should be possible to disconnect a client which is in the middle a reconnection sequence (2601ms)
+    √ TR4 - verify that server can suspend socket connection - useful for testing purposes (2156ms)
+ Session is being transferred from channel 61  to channel  62
+warning : disconnection : closing pending sessions
+    √ TR5 -a client with some active monitoring items should be able to seamlessly reconnect after a connection break - and retrieve missed notification without lost ( Republish) (5936ms)
+ Session is being transferred from channel 63  to channel  64
+warning : disconnection : closing pending sessions
+    √ TR6 -  a client with some active monitoring items should be able to seamlessly reconnect after a very long connection break exceeding subscription lifetime (4971ms)
+    - TR7 -  a client with some active monitored items should be able to reconnect seamlessly after a very long connection break exceeding session life time
+    √ TR8 -  disconnecting during connect (5366ms)
+    √ TR9 -  disconnecting during reconnect (9754ms)
+    √ TR10 -  a client should notify that the reconnection attempt is taking place with an event (5338ms)
+ Session is being transferred from channel 67  to channel  69
+warning : disconnection : closing pending sessions
+    √ TR11 -  a client with active monitoring should be able to reconnect after a EPIPE connection break cause local socket end has been shut down (5345ms)
+Server: closing SESSION  active  Subscription => Notifying Transfer                                  Session1
+  because of timeout =  1000  has expired without a keep alive
+channel =  ::ffff:192.168.0.42  port =  61862
+ServerSidePublishEngine.transferSubscription  =< undefined
+ warning : ClientSessionKeepAliveManager#ping_server  Client not connected
+ warning : ClientSessionKeepAliveManager#ping_server  Client not connected
+ Bad Session Closed in  _on_ActivateSessionRequest 09ab4690cf0f557673fa6a436c4d9177
+ Subscription => Notifying Transfer                                  
+findSubscription   957435
+ServerSidePublishEngine.transferSubscription  =< undefined
+ ---------------------------------------------------- PUSHING PUBLISH RESPONSE FOR LATE ANWSER !
+warning : disconnection : closing pending sessions
+    √ TR12 -  a client with active monitored item should be able to reconnect and transfer subscriptions when session timeout (7494ms)
+
+  Testing Server and Client diagnostic facilities
+err =  null
+    √ Server should keep track of transaction statistics (101ms)
+
+  testing extension object with client residing on a different process than the server process
+ node  ./bin/simple_server_with_custom_extension_objects.js
+stdout:    server PID          : 3172
+stdout:    server on port      : 23232
+stdout:    endpointUrl         : opc.tcp://DESKTOP-C48FPKB:23232
+stdout:    server now waiting for connections. CTRL+C to stop
+DataValue {
+  value: 
+   Variant {
+     dataType: { [Number: 15] key: 'ByteString', value: 15 },
+     arrayType: { [Number: 0] key: 'Scalar', value: 0 },
+     value: <Buffer 3c 6f 70 63 3a 54 79 70 65 44 69 63 74 69 6f 6e 61 72 79 20 78 6d 6c 6e 73 3a 78 73 69 3d 22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f 72 67 2f 32 ... >,
+     dimensions: null },
+  statusCode: { [Number: 0] value: 0, description: 'No Error', name: 'Good' },
+  sourceTimestamp: 2017-05-01T22:19:34.381Z,
+  sourcePicoseconds: 2,
+  serverTimestamp: 2017-05-01T22:19:34.856Z,
+  serverPicoseconds: 0 }
+    √ should read the MyStructureDataType definition (290ms)
+ SHUTTING DOWN : killed =  false  pid =  3172 collected pid= 3172
+
+  testing Client-Server with UserName/Password identity token
+    impersonate user user1 on existing session
+    √ Anonymous user should not be able to read or to write V1 node value (86ms)
+
+  testing server with low maxNodesPerRead and maxNodesPerBrowse
+    √ should be possible to customize serverCapabilities.operationLimits at construction time
+    √ server should provide OperationLimits_MaxNodesPerRead node  (167ms)
+ns=0;i=11705
+    √ server should return BadTooManyOperations when nodesToRead exceed MaxNodesPerRead in read operation  (133ms)
+    √ server should return BadTooManyOperations when browseRequest exceed MaxNodesPerBrowse in browse operation  (127ms)
+    √ server should return BadTooManyOperations when translate exceed maxNodesPerTranslateBrowsePathsToNodeIds in translate operation  (176ms)
+    √ crawler shall work even if server has a low limit the number of node in Read and Browse request (1690ms)
+    - should crawl a server cyclic-node 
+
+  testing client Proxy
+Interior temperature undefined
+ Interior temperature updated ... Variant(Scalar<Float>, value: 16)
+    √ client should expose a nice little handy javascript object that proxies the HVAC UAObject (158ms)
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+ cannot find type definition 0
+currentTime =  Variant(Scalar<DateTime>, value: 2017-05-01T22:19:40.578Z)
+ServerArray =  Variant(Array<String>, l= 1, value=[urn:NodeOPCUA-Server-default])
+serverStatus =  Variant(Scalar<ExtensionObject>, value: { /*ServerStatus*/
+ startTime                     /* UtcTime                          */: 2017-05-01T22:19:38.802Z
+ currentTime                   /* UtcTime                          */: 2017-05-01T22:19:40.580Z
+ state                         /* ServerState                      */: Running ( 0)
+ buildInfo                     /* BuildInfo                        */: {
+   productUri                  /* String                           */: NodeOPCUA-Server
+   manufacturerName            /* String                           */: Node-OPCUA : MIT Licence ( see http://node-opcua.github.io/)
+   productName                 /* String                           */: NODEOPCUA-SERVER
+   softwareVersion             /* String                           */: 0.0.64
+   buildNumber                 /* String                           */: 
+   buildDate                   /* UtcTime                          */: 2017-05-01T15:37:42.819Z
+ }
+ secondsTillShutdown           /* UInt32                           */: 1               0x1
+ shutdownReason                /* LocalizedText                    */: locale=null text=null
+};)
+serverStatus =  Variant(Scalar<ExtensionObject>, value: { /*BuildInfo*/
+ productUri                    /* String                           */: NodeOPCUA-Server
+ manufacturerName              /* String                           */: Node-OPCUA : MIT Licence ( see http://node-opcua.github.io/)
+ productName                   /* String                           */: NODEOPCUA-SERVER
+ softwareVersion               /* String                           */: 0.0.64
+ buildNumber                   /* String                           */: 
+ buildDate                     /* UtcTime                          */: 2017-05-01T15:37:42.819Z
+};)
+currentTime =  Variant(Scalar<DateTime>, value: 2017-05-01T22:19:41.586Z)
+ SubscriptionID=  957437
+err =  null
+outputArgs.clientHandles =  Uint32Array [  ]
+outputArgs.serverHandles =  Uint32Array [  ]
+    √ client should expose a nice little handy javascript object that proxies the server UAObject (2509ms)
+Target temperature nodeId = ns=1;i=1040
+Inside temperature nodeId = ns=1;i=1035
+ reading Interior temperature, got = ... Variant(Scalar<Float>, value: 16)
+ Access Level =  { [Number: 1] key: 'CurrentRead', value: 1 }
+ Invalid Value specified for targetTemperature
+result {}
+  EVENT: targetTemperature has changed to  Variant(Scalar<Double>, value: 16)
+  EVENT: targetTemperature has changed to  Variant(Scalar<Double>, value: 37)
+  EVENT: targetTemperature has changed to  Variant(Scalar<Double>, value: 18)
+stopping proxy
+    √ AA one can subscribe to proxy object property change (4177ms)
+    √ ZZ1 should expose a SubscriptionDiagnostics in Server.ServerDiagnostics.SubscriptionDiagnosticsArray (371ms)
+
+  testing client Proxy
+ServerSession#_createSessionObjectInAddressSpace : no serverDiagnostics.sessionsDiagnosticsSummary
+            bytesRead   15300  bytes
+            bytesRead   15300  bytes
+transactionsPerformed   4  
+ServerSession#_exposeSubscriptionDiagnostics : cannot find SubscriptionDiagnosticsType
+ cannot find type definition 0
+            bytesRead   18715  bytes
+            bytesRead   18715  bytes
+transactionsPerformed   28  
+InitialState =  <null>
+States       =  [ 'HighHigh', 'High', 'Low', 'LowLow' ]
+Transitions  =  [ 'LowLowToLow',
+  'LowToLowLow',
+  'HighHighToHigh',
+  'HighToHighHigh' ]
+ServerSession#_exposeSubscriptionDiagnostics : cannot find SubscriptionDiagnosticsType
+ServerSession#_exposeSubscriptionDiagnostics : cannot find SubscriptionDiagnosticsType
+    √ Z1a should read a state machine (45ms)
+ cannot find type definition 0
+InitialState =  <null>
+States       =  [ 'Unshelved', 'TimedShelved', 'OneShotShelved' ]
+Transitions  =  [ 'UnshelvedToTimedShelved',
+  'UnshelvedToOneShotShelved',
+  'TimedShelvedToUnshelved',
+  'TimedShelvedToOneShotShelved',
+  'OneShotShelvedToUnshelved',
+  'OneShotShelvedToTimedShelved' ]
+    √ Z1b should read a state machine (92ms)
+            bytesRead   24964  bytes
+            bytesRead   24964  bytes
+transactionsPerformed   66  
+ServerSession#_exposeSubscriptionDiagnostics : cannot find SubscriptionDiagnosticsType
+
+  testing server dropping session after timeout if no activity has been recorded
+    √ should not be able to read a node if no session has been opened 
+ServerSession#_createSessionObjectInAddressSpace : no object folder
+Server: closing SESSION  active Session1  because of timeout =  100  has expired without a keep alive
+channel =  ::ffff:192.168.0.42  port =  61885
+    √ should denied service call with BadSessionClosed on a timed out session (1558ms)
+
+  Testing a simple server from Server side
+    √ should have at least one endpoint
+ServerSession#_createSessionObjectInAddressSpace : no object folder
+    √ OPCUAServer#getChannels
+    √ should start and shutdown
+
+  testing Client - Umbrella 
+ ..... starting server 
+ ..... done 
+    √ QQQQ a server shall close any unactivated sessions before reaching the maximum number of session (1125ms)
+    Testing ctt  
+      √ HGHGH should .... (826ms)
+    Testing ctt  - Test 5.10.2 Test case 7  - SubscriptionBasic - 029.js
+   requestedPublishingInterval =  NaN
+     revisedPublishingInterval =  100
+      √ 1. Server should revise PublishingInterval the value to a value it support when RequestedPublishingInterval is NaN  (78ms)
+   requestedPublishingInterval =  Infinity
+     revisedPublishingInterval =  2592000000
+      √ 2. Server should revise PublishingInterval the value to a value it support when RequestedPublishingInterval is Infinity  (84ms)
+   requestedPublishingInterval =  9007199254740991
+     revisedPublishingInterval =  2592000000
+      √ 3. Server should revise PublishingInterval the value to a value it support when RequestedPublishingInterval is MaxFloat  (100ms)
+    Testing client with many monitored items
+      √ should monitor a large number of node (see #69) (3097ms)
+{ /*MonitoredItemNotification*/
+ clientHandle                  /* IntegerId                        */: 2               0x2
+ value                         /* DataValue                        */: {
+   value                       /* Variant                          */: {
+     dataType                  /* DataType                         */: Double ( 11)
+     arrayType                 /* VariantArrayType                 */: Scalar ( 0)
+     value                     /* Any                              */: -901126.3224084831
+     dimensions                /* UInt32                        [] */: null []
+   }
+   statusCode                  /* StatusCode                       */: Good (0x00000)
+   sourceTimestamp             /* DateTime                         */: null
+   sourcePicoseconds           /* UInt16                           */: 0
+   serverTimestamp             /* DateTime                         */: null
+   serverPicoseconds           /* UInt16                           */: 0
+ }
+};
+      √ should monitor a very large number of nodes (5000)  (781ms)
+    Test Browse Request
+      √ T1 - #Browse should return BadNothingToDo if nodesToBrowse is empty 
+      √ T2 - #Browse should return BadViewIdInvalid if viewId is invalid
+      √ T3 - #Browse should return BadViewUnknown if object referenced by viewId is not a view
+      √ T4 - #Browse server should respect Browse maxReferencesPerNode 
+      √ T5 - #BrowseNext response should have serviceResult=BadNothingToDo if request have no continuationPoints
+      √ T6 - #BrowseNext response 
+      - T7 - #BrowseNext with releaseContinuousPoint set to false then set to true
+    testing basic Client-Server communication
+ ServiceResult is BadIdentityTokenInvalid (0x80200000)
+      √ C1 - testing with username === null 
+    testing Client-Server subscription use case, on a fake server exposing the temperature device
+      √ should create a ClientSubscription to manage a subscription (509ms)
+      √ should dump statistics  (276ms)
+      √ a ClientSubscription should receive keep-alive events from the server (1067ms)
+      - a ClientSubscription should survive longer than the life time
+      √ should be possible to monitor an nodeId value with a ClientSubscription (84ms)
+      √ should be possible to monitor several nodeId value with a single client subscription (1079ms)
+warning : disconnection : closing pending sessions
+      √ should terminate any pending subscription when the client is disconnected (184ms)
+    testing server and subscription
+      √ should return BadTooManySubscriptions if too many subscriptions are opened (140ms)
+      √  a server should accept several Publish Requests from the client without sending notification immediately, and should still be able to reply to other requests (83ms)
+      √ A Subscription can be added and then deleted (65ms)
+      √ #deleteSubscriptions -  should return serviceResult=BadNothingToDo if subscriptionIds is empty (58ms)
+      √ A MonitoredItem can be added to a subscription and then deleted (73ms)
+      √ should return BadNodeIdUnknown  if the client tries to monitored an non-existent node (100ms)
+      √ should return BadAttributeIdInvalid if the client tries to monitored an invalid attribute (105ms)
+      √ should return BadIndexRangeInvalid if the client tries to monitored with an invalid index range (100ms)
+      √ GXG should return BadIndexRangeNoData on first notification if the client tries to monitored with 2D index range when a 1D index range is required (588ms)
+      √ GXGA should not report notification if a monitored value array changes outside the monitored indexRange - 1 (1307ms)
+      √ GXG should not report notification if a monitored value array changes outside the monitored indexRange (1315ms)
+      - GXGB disabled monitored item
+      √ #CreateMonitoredItemRequest should return BadNothingToDo if CreateMonitoredItemRequest has no nodes to monitored (117ms)
+      √ #CreateMonitoredItemRequest should return BadIndexRangeInvalid if a invalid range is passed on CreateMonitoredItemRequest  (156ms)
+      √ should return BadNothingToDo if ModifyMonitoredItemRequest has no nodes to monitored (100ms)
+      √ should return BadNothingToDo if DeleteMonitoredItemsResponse has no nodes to delete (101ms)
+      √ A MonitoredItem should received changed event (192ms)
+ClientMonitoredItem#_monitor:  ERROR in createMonitoredItems   ServiceResult is BadTimestampsToReturnInvalid (0x802b0000)
+{ /*CreateMonitoredItemsRequest*/
+ requestHeader                 /* RequestHeader                    */: {
+   authenticationToken         /* NodeId                           */: ns=0;i=0
+   timeStamp                   /* UtcTime                          */: 2017-05-01T22:20:04.542Z
+   requestHandle               /* IntegerId                        */: 3735928559               0xdeadbeef
+   returnDiagnostics           /* UInt32                           */: 0               0x0
+   auditEntryId                /* UAString                         */: 
+   timeoutHint                 /* UInt32                           */: 0               0x0
+   additionalHeader            /* ExtensionObject                  */: null
+ }
+ subscriptionId                /* IntegerId                        */: 957475               0xe9c23
+ timestampsToReturn            /* TimestampsToReturn               */: Invalid ( -1)
+ itemsToCreate                 /* MonitoredItemCreateRequest    [] */: [
+   { /*0*/
+     itemToMonitor             /* ReadValueId                      */: {
+       nodeId                  /* NodeId                           */: ns=0;i=2258
+       attributeId             /* IntegerId                        */: 13               0xd
+       indexRange              /* NumericRange                     */: NumericRange:<Empty>
+       dataEncoding            /* QualifiedName                    */: <null>
+     }
+     monitoringMode            /* MonitoringMode                   */: Reporting ( 2)
+     requestedParameters       /* MonitoringParameters             */: {
+       clientHandle            /* IntegerId                        */: 1               0x1
+       samplingInterval        /* Duration                         */: 100
+       filter                  /* ExtensionObject                  */: null
+       queueSize               /* Counter                          */: 1
+       discardOldest           /* Boolean                          */: true
+     }
+   }
+ ]
+};
+      √ A Server should reject a CreateMonitoredItemRequest if timestamp is invalid ( catching error on monitored item ) (97ms)
+ClientMonitoredItem#_monitor:  ERROR in createMonitoredItems   ServiceResult is BadTimestampsToReturnInvalid (0x802b0000)
+{ /*CreateMonitoredItemsRequest*/
+ requestHeader                 /* RequestHeader                    */: {
+   authenticationToken         /* NodeId                           */: ns=0;i=0
+   timeStamp                   /* UtcTime                          */: 2017-05-01T22:20:04.614Z
+   requestHandle               /* IntegerId                        */: 3735928559               0xdeadbeef
+   returnDiagnostics           /* UInt32                           */: 0               0x0
+   auditEntryId                /* UAString                         */: 
+   timeoutHint                 /* UInt32                           */: 0               0x0
+   additionalHeader            /* ExtensionObject                  */: null
+ }
+ subscriptionId                /* IntegerId                        */: 957476               0xe9c24
+ timestampsToReturn            /* TimestampsToReturn               */: Invalid ( -1)
+ itemsToCreate                 /* MonitoredItemCreateRequest    [] */: [
+   { /*0*/
+     itemToMonitor             /* ReadValueId                      */: {
+       nodeId                  /* NodeId                           */: ns=0;i=2258
+       attributeId             /* IntegerId                        */: 13               0xd
+       indexRange              /* NumericRange                     */: NumericRange:<Empty>
+       dataEncoding            /* QualifiedName                    */: <null>
+     }
+     monitoringMode            /* MonitoringMode                   */: Reporting ( 2)
+     requestedParameters       /* MonitoringParameters             */: {
+       clientHandle            /* IntegerId                        */: 1               0x1
+       samplingInterval        /* Duration                         */: 100
+       filter                  /* ExtensionObject                  */: null
+       queueSize               /* Counter                          */: 1
+       discardOldest           /* Boolean                          */: true
+     }
+   }
+ ]
+};
+      √ A Server should reject a CreateMonitoredItemRequest if timestamp is invalid ( catching error on callback) (76ms)
+      √ A Server should be able to revise publish interval to avoid trashing if client specify a very small or zero requestedPublishingInterval (67ms)
+      √ AZQ should handle PublishRequest to confirm closed subscriptions (406ms)
+    AZA testing Client-Server subscription use case 2/2, on a fake server exposing the temperature device
+      √ ZxZ A server should send a StatusChangeNotification if the client doesn't send PublishRequest within the expected interval (11612ms)
+      √ A subscription without a monitored item should not dropped too early ( see #59) (1073ms)
+      √ #bytesRead #transactionsCount #bytesWritten (59ms)
+      √ #CreateMonitoredItemsRequest : A server should return statusCode === BadSubscriptionIdInvalid when appropriate   (69ms)
+      √ #SetPublishingModeRequest: A server should set status codes to BadSubscriptionIdInvalid when appropriate   (60ms)
+      √ A server should suspend/resume publishing when client send a setPublishingMode Request  (1700ms)
+      √ A client should be able to create a subscription that have  publishingEnable=false (477ms)
+      √ #ModifyMonitoredItemRequest : server should send BadSubscriptionIdInvalid if client send a wrong subscription id (141ms)
+      √ #ModifyMonitoredItemRequest : server should send BadSubscriptionIdInvalid if client send a wrong subscription id (137ms)
+      √ #ModifyMonitoredItemRequest : server should send BadMonitoredItemIdInvalid  if client send a wrong monitored item id (101ms)
+      √ #ModifyMonitoredItemRequest : server should handle samplingInterval === -1 (2938ms)
+      √ ZZ1 #ModifyMonitoredItemRequest : server should handle samplingInterval === 0 (2883ms)
+      √ ZZ2 #ModifyMonitoredItemsRequest : a client should be able to modify a monitored item (2885ms)
+      √ ZZA1 #ModifyMonitoredItemRequest on a non-Value attribute: server should handle samplingInterval === 0 (3085ms)
+      √ ZZA2 #ModifyMonitoredItemRequest on a non-Value attribute: server should handle samplingInterval > 0 (3099ms)
+      √ ZZA3 #ModifyMonitoredItemRequest on a non-Value attribute: server should handle samplingInterval === -1 (3100ms)
+      √ a monitored item with the nodeId set to that of a non-Variable node an  and the attributeId set to a non-Value attribute should send a DataChangeNotification (2077ms)
+      √ ZZ1 Server should revise publishingInterval to be at least server minimum publishing interval (79ms)
+      √ ZZ2 when createMonitored Item samplingInterval is Zero server shall return the fastest possible sampling rate (82ms)
+      √ ZZ3 when createMonitored Item samplingInterval is -1 (minus one) server shall return the sampling rate of the subscription 1/2 (91ms)
+      √ ZZ3 when createMonitored Item samplingInterval is -1 (minus one) server shall return the sampling rate of the subscription 2/2 (68ms)
+      √ ZZ4 when createMonitored Item samplingInterval is too small, server shall return the sampling rate of the subscription (98ms)
+      - When a user adds a monitored item that the user is denied read access to, the add operation for the item shall succeed and the bad status  Bad_NotReadable  or  Bad_UserAccessDenied  shall be returned in the Publish response
+      √ #CTT1 - should make sure that only the latest value is returned when queue size is one and discard oldest is false (859ms)
+      √ #CTT2 - should make sure that only the latest value is returned when queue size is one and discard oldest is true (868ms)
+      √ #CTT3 - should make sure that only the last 2 values are returned when queue size is two and discard oldest is TRUE (865ms)
+      √ #CTT4 - should make sure that only the last 2 values are returned when queue size is two and discard oldest is false (908ms)
+      √ #CTT5 Monitoring a non-Variable node with delayed PublishRequest: (495ms)
+ Timeout .... waiting for response for  OpenSecureChannelRequest { /*RequestHeader*/
+Warning: securityToken hasn't been renewed
+ authenticationToken           /* NodeId                           */: ns=0;i=0
+ timeStamp                     /* UtcTime                          */: 2017-05-01T22:19:49.514Z
+ requestHandle                 /* IntegerId                        */: 7               0x7
+ returnDiagnostics             /* UInt32                           */: 0               0x0
+ auditEntryId                  /* UAString                         */: null
+ timeoutHint                   /* UInt32                           */: 0               0x0
+ additionalHeader              /* ExtensionObject                  */: null
+};
+      √ #CTT6 Late Publish should have data (11620ms)
+      √ #ModifySubscriptionRequest: should return BadSubscriptionIdInvalid if client specifies a invalid subscriptionId (53ms)
+      √ #ModifySubscriptionRequest: should return StatusGood (76ms)
+      √ #SetMonitoringMode, should return BadSubscriptionIdInvalid when subscriptionId is invalid (48ms)
+      √ #SetMonitoringMode, should return BadNothingToDo if monitoredItemId is empty (94ms)
+      √ #SetMonitoringMode, should return BadMonitoredItemIdInvalid is monitoringMode is invalid (98ms)
+      √ #SetMonitoringMode, should return BadMonitoredItemIdInvalid when monitoredItem is invalid (92ms)
+      √ #SetMonitoringMode, should return Good when request is valid (96ms)
+      √ #subscription operations should extend subscription lifetime (2080ms)
+      #CTT - Monitored Value Change
+        √ should monitor a substring  (872ms)
+        √ ZZE it should return a publish Response with Bad_IndexRangeNoData , when the size of the monitored item change (1666ms)
+      #Republish
+        √ server should handle Republish request (BadMessageNotAvailable)  (173ms)
+        √ server should handle Republish request (BadSubscriptionIdInvalid)  (168ms)
+        √ server should handle Republish request (Good)  (156ms)
+    end-to-end testing of a write operation between a client and a server (session#write)
+      √ should return BadNodeIdUnknown if nodeId is unknown  (51ms)
+      √ should return Good if nodeId is known but not writeable  (60ms)
+      √ should return Good if nodeId is known and writable  (51ms)
+      √ should return an error if value to write has a wrong dataType (58ms)
+      √ should return an error if value to write has a wrong dataType ( Double  instead of Float) (53ms)
+      √ server should return Good_CompletesAsynchronously if the  variable write operation happens asynchronously (64ms)
+      √ should return BadNothingToDo if writeRequest is empty (50ms)
+      √ should return BadNothingToDo if writeRequest is null (50ms)
+      √ MMM should return BadTooManyOperation if nodesToWrite has too many elements (68ms)
+ requested source timestamp = 1493677262915
+==== 1493677262915
+DataValue:
+   value:           Variant(Scalar<Double>, value: -23)
+   statusCode:      GoodLocalOverride (0x00960000)
+   serverTimestamp: 2017-05-01T22:21:02.916Z $ 0
+   sourceTimestamp: 2017-05-01T22:21:02.915Z $ 112
+      √ VQT should write Value Quality Timestamp (54ms)
+    testing session  transfer to different channel
+      √ RQC1 - It should be possible to close a session that has not be activated yet
+      √ RQB1 - calling CreateSession and CloseSession &  CloseSession again should return BadSessionIdInvalid
+      √ RQB2 - calling CloseSession without calling CreateSession first
+      √ RQB3 - calling CreateSession,  CloseSession  and CloseSession again (67ms)
+ Session is being transferred from channel 193  to channel  194
+ERROR: channel.secureChannelId !== session.secureChannelId 193 194
+warning : disconnection : closing pending sessions
+      √ RQ0 - call ActiveSession on a session that has been transferred to a different channel (76ms)
+ channel.sessionTokens === 
+      √ RQ1 - should reject if the channel used to activate the session for the first time is not the same as the channel used to create the session (71ms)
+ Session is being transferred from channel 197  to channel  198
+      √ RQ2 -server should raise an error if a existing session is reactivated from a channel that have different certificate than the original channel (172ms)
+ Session is being transferred from channel 199  to channel  200
+warning : disconnection : closing pending sessions
+      √ RQ3 - server should raise an error if a session is reactivated with different user identity tokens (94ms)
+      - RQ4 - server should reject request send via old channel when session has been transferred to new channel
+ Session is being transferred from channel 201  to channel  202
+warning : disconnection : closing pending sessions
+      √ RQ5 - server should reject pending requests send to old channel when session has been transferred to new channel (1162ms)
+    end-to-end testing registerNode
+      √ should register nodes - BadNothingToDo (59ms)
+      √ should register nodes - Good (57ms)
+      √ should unregister nodes - BadNothingToDo (51ms)
+      √ should unregister nodes - Good (59ms)
+    Testing bug #73 -  Server resets sequence number after secure channel renewal 
+[ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+      √ should not reset sequence number after secure channel renewal  (1060ms)
+    Testing bug #119 - Verify that monitored item only reports expected value change notifications :
+      √ monitoring variables shall only reports real value changes : fixing bug #119 (5316ms)
+      √ a server that have a fast sampling rate shall not report 'value changes' on monitored item faster than the sampling rate imposed by the client (2094ms)
+    Testing bug #141 -  Client should have a appropriated timeoutHint on PublishRequest 
+revised publishingInterval : 6000
+revised lifetimeCount      : 12
+revised maxKeepAliveCount  : 2
+started subscription       : 957517
+keepalive
+keepalive
+      √ Client#Subscription : PublishRequest.requestHeader.timeoutHint shall not be lesser that time between 2 keepalive response (25065ms)
+ Timeout .... waiting for response for  ReadRequest { /*RequestHeader*/
+ authenticationToken           /* NodeId                           */: ns=0;b=19f1e3912fa559c9bd54abeb71d96a45
+ timeStamp                     /* UtcTime                          */: 2017-05-01T22:21:38.451Z
+ requestHandle                 /* IntegerId                        */: 5               0x5
+ returnDiagnostics             /* UInt32                           */: 0               0x0
+ auditEntryId                  /* UAString                         */: 
+ timeoutHint                   /* UInt32                           */: 10               0xa
+ additionalHeader              /* ExtensionObject                  */: null
+};
+ received timed_out_request { /*ReadRequest*/
+ requestHeader                 /* RequestHeader                    */: {
+   authenticationToken         /* NodeId                           */: ns=0;b=19f1e3912fa559c9bd54abeb71d96a45
+   timeStamp                   /* UtcTime                          */: 2017-05-01T22:21:38.451Z
+   requestHandle               /* IntegerId                        */: 5               0x5
+   returnDiagnostics           /* UInt32                           */: 0               0x0
+   auditEntryId                /* UAString                         */: 
+   timeoutHint                 /* UInt32                           */: 10               0xa
+   additionalHeader            /* ExtensionObject                  */: null
+ }
+ maxAge                        /* Duration                         */: 0
+ timestampsToReturn            /* TimestampsToReturn               */: Neither ( 3)
+ nodesToRead                   /* ReadValueId                   [] */: [
+   { /*0*/
+     nodeId                    /* NodeId                           */: ns=1;i=14606
+     attributeId               /* IntegerId                        */: 13               0xd
+     indexRange                /* NumericRange                     */: NumericRange:<Empty>
+     dataEncoding              /* QualifiedName                    */: <null>
+   }
+ ]
+};
+      √ ZZ2 client should raise an event to observer when a request has timed out ( timeoutHint exhausted without response) (124ms)
+    Testing bug #146 - reopenning Anonymous Session with Username password
+    create a session as a anonymous use
+    impersonate user user2 on existing session
+      √ should reopen a Anonymous Session with UserName password  (160ms)
+    testing CALL SERVICE on a fake server exposing the temperature device
+      √ Q1 should retrieve the inputArgument of a method using a OPCUA transaction getArgumentDefinition (125ms)
+      √ Q2 should return BadNothingToDo when CallRequest has no method to call (144ms)
+      √ Q3-0 should reports inputArgumentResults GOOD when CallRequest input is good (146ms)
+      √ Q3-1 should return BadInvalidArgument /  BadTypeMismatch when CallRequest input argument has the wrong DataType (135ms)
+      √ Q3-2 should return BadInvalidArgument /  BadTypeMismatch when CallRequest input argument has the wrong ArrayType (138ms)
+      √ Q3-4 should handle multiple calls (176ms)
+      √ Q3-5 should return BadTooManyOperations when CallRequest has too many methods to call (1330ms)
+      √ Q4 should succeed and return BadNodeIdInvalid when CallRequest try to address an node that is not an UAObject (89ms)
+      √ Q5 should succeed and return BadNodeIdUnknown when CallRequest try to address an unknown object (71ms)
+      √ Q6 should succeed and return BadMethodInvalid when CallRequest try to address an unknwon method on a valid object (75ms)
+      √ Q7 should succeed and return BadInvalidArgument when CallRequest has invalid arguments (72ms)
+      √ Q8 should succeed and return BadTypeMismatch when CallRequest is GetMonitoredItem and has the argument with a wrong dataType  (67ms)
+      √ Q9 should succeed and return BadSubscriptionId when CallRequest is GetMonitoredItem and has valid arguments but invalid subscriptionId  (62ms)
+      √ should find the OutputArguments and InputArguments Properties with a translate browse path request (like UAExpert) (64ms)
+      GetMonitoredItems
+        √ T1 A client should be able to call the GetMonitoredItems standard OPCUA command, and return BadSubscriptionId if input args subscriptionId is invalid  (67ms)
+        √ T2 A client should be able to call the GetMonitoredItems standard OPCUA command, with a valid subscriptionId and no monitored Item (95ms)
+        √ T3 A client should be able to call the GetMonitoredItems standard OPCUA command, with a valid subscriptionId and one monitored Item (181ms)
+        √ T4 GetMonitoredItem must have the Executable attribute set (67ms)
+    ClientSession#readVariableValue
+      √ ClientSession#readVariableValue - case 1 - a single nodeId (61ms)
+      √ ClientSession#readVariableValue - case 2 - an array of nodeIds (75ms)
+ dataValue =  DataValue:
+   value:           Variant(Scalar<Int32>, value: 2)
+   statusCode:      Good (0x00000)
+   serverTimestamp: null
+   sourceTimestamp: null
+      √ ClientSession#readVariableValue - case 3 - a single ReadValueId (72ms)
+    JHJ1 end-to-end testing of read and write operation on a Variable
+      √ writing dataValue case 1 - both serverTimestamp and sourceTimestamp are specified  (102ms)
+      √ writing dataValue case 2 - serverTimestamp is null & sourceTimestamp is specified (62ms)
+      √ writing dataValue case 3 - serverTimestamp is null & sourceTimestamp is null  (59ms)
+      √ ZZZ reading ns=411;s=Scalar_Static_Int16  (67ms)
+      - #read test maxAge
+      Performance of reading large array
+        √ PERF - READ testing performance of large array (68ms)
+        √ PERF - WRITE testing performance of large array (369ms)
+    NodeCrawler
+err =  null
+      √ should crawl for a complete tree with limited node per browse and read request (761ms)
+Objects
+Types
+Views
+      √ should crawl one at a time (4365ms)
+      √ should crawl faster the second time (4057ms)
+err =  null
+    Client Subscription with Event monitoring
+      √ ZZ1 CreateMonitoredItemsRequest: server should not accept en Event filter if node attribute to monitor is not EventNotifier (99ms)
+      - should only accept event monitoring on ObjectNode that have the SubscribeToEventBit set
+      √ ZY2 should create a monitoredItem on a event without an Event Filter  (94ms)
+      √ ZZ2 should create a monitoredItem on a event with an Event Filter  (136ms)
+ ERROR Mismatch between attributeId and filter in monitoring parameters : no filter expected when attributeId is not Value  or  EventNotifier
+      √ Client: should raise a error if a filter is specified when monitoring some attributes which are not Value or EventNotifier (95ms)
+ ERROR Mismatch between attributeId and filter in monitoring parameters : Got a DataChangeFilter but a EventFilter object is required when itemToMonitor.attributeId== AttributeIds.EventNotifier
+Mismatch between attributeId and filter in monitoring parameters : Got a DataChangeFilter but a EventFilter object is required when itemToMonitor.attributeId== AttributeIds.EventNotifier
+      √ Client: should raise a error if filter is not of type EventFilter when monitoring an event (96ms)
+      ZZA- Testing Server generating Event and client receiving Event Notification
+        √ TE1 - should monitored Server Event (1113ms)
+    Testing bug #144 - Server with Client & active subscription, connection broken , reconnection => No data Lost
+      - #144-A should 1
+    Testing bug #156 - monitoring a variable with a sampling rate which is faster that the time taken to acquire the variable value
+      √ test (3078ms)
+    Testing bug #123 - monitoring multiple variables on same subscription
+      √ test (1081ms)
+    Testing bug #163 
+      √ test (3090ms)
+    Testing #135 - a server shall expose currentMonitoredItemsCount
+      √ test (89ms)
+    Testing enhancement request #192 
+      √ #191 Server should receive an 'newChannel' event when a new channel is established and a 'closeChannel' when it close
+    Testing #195
+warning : disconnection : closing pending sessions
+      √ #195-A the node-opcua client shall automatically detect the maximum number of pending publish request supported by the server and avoid overflowing the server with too many (159ms)
+Server: closing SESSION  Subscription => Notifying Transfer                                   active Session1  because of timeout =  2500 
+ has expired without a keep alive
+channel =  ::ffff:192.168.0.42  port =  62305
+ServerSidePublishEngine.transferSubscription  =< undefined
+ClientSubscription#__on_publish_response_StatusChangeNotification : GoodSubscriptionTransferred
+ Session has been closed  BadSessionClosed (0x80260000)
+ received internal error  ServiceResult is BadSessionIdInvalid (0x80250000)
+ Subscription => Notifying Transfer                                  
+transferring subscription 957535
+findSubscription   957535
+ServerSidePublishEngine.transferSubscription  =< undefined
+ ---------------------------------------------------- PUSHING PUBLISH RESPONSE FOR LATE ANWSER !
+warning : disconnection : closing pending sessions
+      √ #195-B a client shall detect when the server has closed a session due to timeout and  inactive subscriptions (3109ms)
+    Testing server when client sessionName  is not defined   #198
+      √ #198 Server should handle client createSession without complaining if client's provided sessionName is null or undefined (62ms)
+    Testing enhancement request  #205 -  set client name to get meaningful session name
+      √ Default client sessionName  (146ms)
+      √ should be possible to set the clientName to get more expressive  sessionName  (123ms)
+    Testing issue  #214 -  DataChangeTrigger.StatusValueTimestamp
+      √ #214 -  DataChangeTrigger.StatusValueTimestamp (2094ms)
+    testing session#translateBrowsePath
+      √ TBP1 should translate browse path (60ms)
+{ /*BrowsePathResult*/
+ statusCode                    /* StatusCode                       */: BadNothingToDo (0x800f0000)
+ targets                       /* BrowsePathTarget              [] */: [ /* empty */ ]
+};
+      √ TBP2 server should return BadNothingToDo when the translateBrowsePath browse path relativePath is empty (67ms)
+    AZAZ Testing 50 clients
+      √ should accept many clients (3951ms)
+    AAAY Testing 50 sessions on the same  connection 
+ Bad Session Closed in  _on_ActivateSessionRequest d1efd5bd1ce0c243f0341b0573f226af
+ Bad Session Closed in  _on_ActivateSessionRequest 4bef19d6b3da59772a38fd735d12de74
+ Bad Session Closed in  _on_ActivateSessionRequest 3173a0bbe0ac066b91fad97886cc91fa
+ Bad Session Closed in  _on_ActivateSessionRequest 3453cd4021125da08a24a4a16f5fcadf
+ Bad Session Closed in  _on_ActivateSessionRequest 58bd9ad1c58990b01779d9045433e605
+ Bad Session Closed in  _on_ActivateSessionRequest 726daa5f987c2c8ad10d0c2b66659112
+ Bad Session Closed in  _on_ActivateSessionRequest 07f591c3f067fbd7795b3c6f7efb73c6
+ Bad Session Closed in  _on_ActivateSessionRequest c9c88b86676c742ae39e438816d30425
+ Bad Session Closed in  _on_ActivateSessionRequest 3dedd867d42d5d50fbf69bae72f00b5b
+ Bad Session Closed in  _on_ActivateSessionRequest fef5bdb324e9930b6b362109880e7686
+      √ QZQ should be possible to open  many sessions on a single connection (2903ms)
+warning : disconnection : closing pending sessions
+    SubscriptionDiagnostics
+ getting diagnostic for subscription.id= 957537
+      √ SubscriptionDiagnostics-1 : server should expose SubscriptionDiagnosticsArray (89ms)
+      √ SubscriptionDiagnostics-2 : server should remove SubscriptionDiagnostics from SubscriptionDiagnosticsArray when subscription is terminated (78ms)
+      √ SubscriptionDiagnostics-3 : server should remove SubscriptionDiagnostics from SubscriptionDiagnosticsArray when subscription has timedout (12102ms)
+    QSD Test Browse Request
+      √ T6 - #BrowseNext response 
+    ZZZA Testing timeout on session 
+Server: closing SESSION  active Session1  because of timeout =  1000  has expired without a keep alive
+channel =  ::ffff:192.168.0.42  port =  62373
+      √ An opened session will eventually time out on server side if the client doesn't make transactions (2052ms)
+      √ A open session will not time out on server side if the client has keepSessionAlive = true (2059ms)
+      √ An opened session will not time-out on server side if the client has keepSessionAlive = true (6074ms)
+    ZZZB Testing AuditSessionEventType
+Server: closing SESSION  active Session1  because of timeout =  1000  has expired without a keep alive
+channel =  ::ffff:192.168.0.42  port =  62378
+      √ EdgeCase Session Timeout: server should raise a Session/CreateSession, Session/ActivateSession , Session/Timeout (2275ms)
+      √ NominalCase: server should raise a Session/CreateSession, Session/ActivateSession , Session/CloseSession (1076ms)
+ shutting down auditing session
+    Closing an unactivated session 
+      √ AKQ server shall return BadSessionNotActivated if client attempts to close an unactivated session
+    Testing issue  #223 -  Demonstrating how to use call service from client
+      √ #223 - calling a method with one input argument (54ms)
+    #TSS TransferSessionService
+ServerSidePublishEngine.transferSubscription  =< undefined
+ Subscription => Notifying Transfer                                  
+SubscriptionId  957541
+findSubscription   957541
+ Subscription => Notifying Transfer                                  
+ServerSidePublishEngine.transferSubscription  =< undefined
+ ---------------------------------------------------- PUSHING PUBLISH RESPONSE FOR LATE ANWSER !
+ =>  { /*TransferResult*/
+ statusCode                    /* StatusCode                       */: Good (0x00000)
+ availableSequenceNumbers      /* Counter                       [] */: [ /* empty*/ ]
+};
+      √ should transfer a subscription (176ms)
+ Subscription => Notifying Transfer                                  findSubscription   957542
+
+foundSubscription   957542  in session Session1
+ServerSidePublishEngine.transferSubscription  =< undefined
+ClientSubscription#__on_publish_response_StatusChangeNotification : GoodSubscriptionTransferred
+      √ GG2 should transfer a subscription from a live session to an other (163ms)
+StatusChange Count  0  keepAlive count =  3
+findSubscription   957543
+ Subscription => Notifying Transfer                                  foundSubscription   957543  in session Session1
+ServerSidePublishEngine.transferSubscription  =< undefined
+ClientSubscription#__on_publish_response_StatusChangeNotification : GoodSubscriptionTransferred
+
+StatusChange Count  1  keepAlive count =  4
+------------------- terminated
+Already Terminated
+      √ GG3 should send a StatusChangeNotificiation to the old session wiith GoodSubscriptionTransfered (3194ms)
+findSubscription   957544
+ Subscription => Notifying Transfer                                  foundSubscription   957544  in session Session1
+
+ServerSidePublishEngine.transferSubscription  =< undefined
+count =  2
+count =  1
+count =  4
+------------------- 957544
+      √ GG4 should resend initialValue on monitored Item (1207ms)
+    Testing issue  #231 -  Server should accept client with protocolVersion greater than the protocolVersion it supports
+warning ! client sent helloMessage.protocolVersion = 0x1000  whereas server protocolVersion is 0x0
+      √ #231-A 
+warning ! client sent helloMessage.protocolVersion = 0xdeadbeef  whereas server protocolVersion is 0x0
+      √ #231-B BadProtocolVersionUnsupported
+    Testing SemanticChanged Bit on statusCode monitoredItemData
+      √ YY1 should set SemanticChanged - with sampling monitored item (507ms)
+      √ YY2 should set SemanticChanged - with event based monitored item (375ms)
+    Testing issue#253 
+2017-05-01T22:22:51.265Z
+2017-05-01T22:22:51.365Z
+2017-05-01T22:22:51.465Z
+2017-05-01T22:22:51.565Z
+      √ a subscription should report monitored item notification for ServerStatus (489ms)
+    Testing issue#273 
+      √ GDT1- should be possible to find the DataType of node - Double  (86ms)
+      √ GDT2- should be possible to find the DataType of  node - ImageGIF (94ms)
+      √ GDT3- should be possible to find the DataType of simple node - Int64 (86ms)
+      √ GDT4- should be possible to find the DataType of simple - QualifiedName (77ms)
+      √ GDT5- should fail  to find the DataType on a Object ( Server Object for instance) (85ms)
+    Testing issue#313 
+Hello
+err BadNodeIdUnknown (0x80340000)
+Hello
+err BadNodeIdUnknown (0x80340000)
+      √ Should not crash when monitoring the same invalid nodeId for the second time  (90ms)
+    A&C monitoring conditions
+      √ GGG2 -  Limit Alarm should trigger Event when ever the input node goes out of limit (307ms)
+      √ GGG1 - ConditionRefresh (840ms)
+      √ KKL1 should raise an (OPUCA) event when commenting a Condition  (441ms)
+      √ KKL2 should raise an (INTERNAL) event when commenting a Condition  (326ms)
+      - should raise an event when acknowledging an AcknowledgeableCondition 
+      - a condition should expose ReadOnly condition values
+ Deleting not longer needed branch  ns=1;g=C0C9A9F1-A90F-1D19-30B7-A8306A204E09
+autoConfirmBranch getAckedState  true
+ Deleting not longer needed branch  ns=1;g=A4A178BA-327D-5BAC-5E2D-B939222E6683
+      √ A&C1 Example of a Condition that maintains previous states via branches - with exclusive condition (3060ms)
+ Deleting not longer needed branch  ns=1;g=B2D5916F-E512-F6F0-F77F-F8024F0D9E45
+autoConfirmBranch getAckedState  true
+ Deleting not longer needed branch  ns=1;g=332B51F0-688F-0243-6B83-9B84F30F0DF9
+      √ A&C2 Example of a Condition that maintains previous states via branches - with non exclusive condition (2893ms)
+      test on Disabled conditions
+        √ KKL should raise an event when a Condition get disabled (715ms)
+        - EventId, EventType, Source Node, Source Name, Time, and EnabledState shall return valid values when condition is disabled 
+        - reading no longer provided variables of a disabled Condition shall return Bad_ConditionDisabled
+
+  testing external server operations
+ node  ./bin/simple_server
+stdout:    server PID          : 16576
+stdout:  registering server to :opc.tcp://DESKTOP-C48FPKB:4840/UADiscovery
+stdout:  err Cannot find module 'usage'
+stdout:  skipping installation of cpu_usage and memory_usage nodes
+stdout:    server on port      : 2223
+stdout:    endpointUrl         : opc.tcp://DESKTOP-C48FPKB:2223
+stdout:    serverInfo          :
+stdout:        applicationUri                  : urn:DESKTOP-C48FPKB:NodeOPCUA-Server
+stdout:        productUri                      : NodeOPCUA-Server
+stdout:        applicationName                 : locale=en text=NodeOPCUA
+stdout:        applicationType                 : SERVER
+stdout:        gatewayServerUri                : null
+stdout:        discoveryProfileUri             : null
+stdout:        discoveryUrls                   : 
+stdout:        productName                     : NODEOPCUA-SERVER
+stdout:    buildInfo           :
+stdout:        productUri                      : NodeOPCUA-Server
+stdout:        manufacturerName                : Node-OPCUA : MIT Licence ( see http://node-opcua.github.io/)
+stdout:        productName                     : NODEOPCUA-SERVER
+stdout:        softwareVersion                 : 0.0.64
+stdout:        buildNumber                     : 1234
+stdout:        buildDate                       : Mon May 01 2017 17:37:42 GMT+0200 (西欧夏令时)
+stdout:    server now waiting for connections. CTRL+C to stop
+ SHUTTING DOWN : killed =  false  pid =  16576 collected pid= 16576
+    √ should start and stop a external server (2448ms)
+
+  Testing 
+ CYCLE for simple loop op/s 39296.20 count = 3930
+ CYCLE forEach         op/s 1134.556 count = 114
+ Fastest is for simple loop
+ Speed Up : x 34
+ count    :   undefined
+    √ forEach vs simple loops (203ms)
+
+  Testing BinaryStream
+    √ should create a binary stream
+
+  Testing BinaryStreamSizeCalculator
+    √ should calculate the right size
+
+  Testing BinaryStream#writeArrayBuffer /  BinaryStream#readArrayBuffer
+    √ should provide a working writeArrayBuffer (491ms)
+ CYCLE writeArrayBuffer (old version with byte copy) op/s 30.19596 count = 7
+ CYCLE writeArrayBuffer op/s 6.012608 count = 5
+ Fastest is writeArrayBuffer (old version with byte copy)
+ Speed Up : x 5
+    √ should provide a efficient writeArrayBuffer (1064ms)
+ CYCLE readArrayBuffer_old (old version with byte copy) op/s 100.5847 count = 23
+ CYCLE readArrayBuffer op/s 5.675824 count = 5
+ Fastest is readArrayBuffer_old (old version with byte copy)
+ Speed Up : x 17
+    √ should provide a efficient readArrayBuffer (1419ms)
+ CYCLE writeArrayBuffer_old/readArrayBuffer_old (old version with byte copy) op/s 26.04264 count = 6
+ CYCLE writeArrayBuffer/readArrayBuffer op/s 3.376603 count = 5
+ Fastest is writeArrayBuffer_old/readArrayBuffer_old (old version with byte copy)
+ Speed Up : x 7
+    √ round trip (1992ms)
+
+  testing buffer utils
+ CYCLE new Buffer(size) op/s 191.3616 count = 120
+ CYCLE createFastUninitializedBuffer op/s 188.2441 count = 104
+ Fastest is new Buffer(size)
+ Speed Up : x 1
+    √ buffer_utils.createFastUninitializedBuffer should be faster than new Buffer(size) (1184ms)
+
+  Chunk manager - no header - no signature - no encryption
+    √ should decompose a large single write in small chunks
+    √ should decompose many small writes in small chunks
+
+  Chunk Manager (chunk size 32 bytes, sequenceHeaderSize: 8 bytes)
+
+    √ should transform a 32 bytes message into a chunk of 32 bytes and 16 bytes
+    √ should transform a 33 bytes message into a chunk of 32 bytes and 17 bytes
+
+  Chunk Manager (chunk size 32 bytes, sequenceHeaderSize: 8 bytes ,signatureLength: 4 )
+
+    √ should transform a 32 bytes message into a chunk of 32 bytes and 24 bytes
+    √ should transform a 33 bytes message into a chunk of 32 bytes and 25 bytes
+
+  Chunk Manager Padding (chunk size 32 bytes, plainBlockSize 8 bytes ,cipherBlockSize 8 bytes )
+
+    √ should transform a  1 bytes message into a single 12 bytes chunk
+    √ should transform a  2 bytes message into a single 20 bytes chunk
+    √ should transform a 10 bytes message into a single 28 bytes chunk
+    √ should transform a 32 bytes message into two 28 bytes chunks
+    √ should transform a 64 bytes message into four 28 bytes chunks 
+    √ should transform a 16 bytes message into a single chunk 
+    √ should transform a 17 bytes message into a single chunk 
+    √ should transform a 35 bytes message into a  chunk of 32 bytes followed by a chunk of 8 bytes
+
+  Chunk Manager Padding (chunk size 32 bytes, plainBlockSize 6 bytes ,cipherBlockSize 8 bytes )
+
+    √ should transform a 1 byte message into a single chunk
+    √ should transform a 2 byte message into a single chunk
+    √ should transform a 3 byte message into a single chunk
+    √ should transform a 4 byte message into a single chunk
+    √ should transform a 5 byte message into a single chunk
+    √ should transform a 6 byte message into a single chunk
+    √ should transform a 29 byte message into a single chunk
+    √ should transform a 30 byte message into a single chunk
+
+  exploring CTT Client certificate
+ Version                   :  3
+ issuer.commonName         :  UA_Compliance_Test_Tool
+ uniformResourceIdentifier :  [ 'urn:localhost:UA_Compliance_Test_Tool' ]
+ dNSName                   :  [ 'localhost' ]
+    √ should extract application uri from certificate
+
+  Crypto utils
+    √ should read a PEM file
+    √ should read a certificate chain
+    √ makeSHA1Thumbprint should produce a 20-byte thumbprint 
+
+  exploreCertificate
+    √ should explore a 1024 bits RSA certificate
+    √ should explore a 2048 bits RSA certificate
+
+  check OPCUA Date conversion version 0
+    √ should convert date in 2014 
+    √ dateToHundredNanoSecondFrom1601 should return 0 for 1st of January 1601
+    √ dateToHundredNanoSecondFrom1601 should return xx nanos for 2st of January 1601
+    √ hundredNanoSecondFrom1601ToDate and dateToHundredNanoSecondFrom1601 
+
+  check OPCUA Date conversion version 2
+    √ should verify that Date.getTime returns the number of millisecond since January, 1st 1970 UTC
+    √ bn_dateToHundredNanoSecondFrom1601 should return n=(number of nanosecond in a single day) for January, 2nd 1601 00:00:00 UTC
+    √ should decode 0xd353c292 0x01cef70c DateTime as 2013-12-12T07:36:09.747Z
+    √ should handle 100 nanoseconds
+
+  Benchmarking Date conversion routines
+    √ should check that slow and fast method produce same result
+ CYCLE bn_dateToHundredNanoSecondFrom1601_safe op/s 62965.85 count = 31483
+ CYCLE bn_dateToHundredNanoSecondFrom1601_fast op/s 407741.4 count = 203871
+ Fastest is bn_dateToHundredNanoSecondFrom1601_fast
+ Speed Up : x 6
+    √ should ensure that fast method (bn_dateToHundredNanoSecondFrom1601) is faster than slow method (1061ms)
+ CYCLE bn_hundredNanoSecondFrom1601ToDate_safe op/s 122815.7 count = 61408
+ CYCLE bn_hundredNanoSecondFrom1601ToDate_fast op/s 529650.1 count = 265601
+ Fastest is bn_hundredNanoSecondFrom1601ToDate_fast
+ Speed Up : x 4
+    √ should ensure that fast method (bn_hundredNanoSecondFrom1601ToDate) is faster than slow method (1087ms)
+    √ should convert any random date
+    √ bn_dateToHundredNanoSecondFrom1601 should return 0 for January, 1st 1601 00:00:00 UTC
+    √ bn_dateToHundredNanoSecondFrom1601 should return 0x019DB1DE-D53E8000 = 116444736000000000 for January, 1st 1970 00:00:00 UTC
+
+  understanding Javascript date
+    √ should check that javascript doesn't deal with leap seconds.
+    √ should have a expected number of millisecond in a year span (without leap seconds)
+
+  testing message decryption
+    √ should decrypt an OPN packet and verify that the signature is correct
+
+  testing built-in type encoding
+    √ should encode and decode a boolean as a single byte
+    √ should encode and decode a Int16 (2 bytes)
+    √ should encode and decode a Int16 (2 bytes)
+    √ should encode and decode a Integer (4 bytes)
+    √ should encode and decode a Floating Point (4 bytes)
+    √ should encode and decode a Double Point (8 bytes)
+    √ should encode and decode a null string
+    √ should encode and decode a normal string
+    √ should encode and decode a DateTime
+    √ should encode and decode a GUID
+    √ should encode and decode a GUID
+    √ should encode and decode a ByteString
+    √ should encode and decode a two byte NodeId
+    √ should encode and decode a four byte NodeId
+    √ should encode and decode a Numeric NodeId
+    √ should encode and decode a byte NodeId (bug reported by Mika)
+    √ should encode and decode any small numeric NodeId
+    √ should encode and decode a String NodeId
+    √ should encode and decode a Guid NodeId
+    √ should encode and decode a Opaque NodeId
+    √ should encode and decode a BYTESTRING NodeId
+    √ should encode and decode a Expanded NodeId  - TwoBytes
+    √ should encode and decode a Expanded NodeId  - FourBytes
+    √ should encode and decode a Expanded NodeId with namespaceUri
+    √ should encode and decode a UInt64 EightBytes
+    √ should encode and decode a Int64 EightBytes
+
+  encoding and decoding string
+    √ should encode and decode a simple ascii String
+00000000: 03 00 00 00 c2 b0 43                                                                               ....B0C
+
+    √ should encode and decode a utf-8 containing double bytes characters
+00000000: 0c 00 00 00 e4 bd a0 e5 a5 bd e4 b8 96 e7 95 8c                                                    ....d=.e%=d8.g..
+
+    √ should encode and decode a utf-8 containing chinesse characters
+
+  encoding and decoding arrays
+    √ should encode and decode an array of integer
+    √ should encode and decode an array of strings
+
+  check isValid and random for various types
+    √ should test isValid on Int32
+    √ should test isValid on UInt16
+    √ should have a random and isValid method for type Byte
+    √ should have a random and isValid method for type SByte
+    √ should have a random and isValid method for type UInt8
+    √ should have a random and isValid method for type UInt16
+    √ should have a random and isValid method for type UInt32
+    √ should have a random and isValid method for type Int8
+    √ should have a random and isValid method for type Int16
+    √ should have a random and isValid method for type Int32
+    √ should have a random and isValid method for type String
+    √ should have a random and isValid method for type Boolean
+    √ should have a random and isValid method for type Double
+    √ should have a random and isValid method for type Float
+    √ should have a random and isValid method for type Guid
+    √ should have a random and isValid method for type DateTime
+    √ should have a random and isValid method for type NodeId
+    √ should have a random and isValid method for type ByteString
+    √ should have a random and isValid method for type Int64
+    √ should have a random and isValid method for type UInt64
+
+  check coerce various types
+    √ should have a coerce method for boolean
+    √ should have a coerce method for Byte
+    √ should have a coerce method for SByte
+    √ should have a coerce method for UInt8
+    √ should have a coerce method for UInt16
+    √ should have a coerce method for UInt32
+    √ should have a coerce method for Int8
+    √ should have a coerce method for Int16
+    √ should have a coerce method for Int32
+    √ should have a coerce method for Float
+    √ should have a coerce method for Double
+    √ should have a coerce method for Int64
+    √ should have a coerce method for UInt64
+    √ coerceByte     should preserves null or undefined values 
+    √ coerceSByte    should preserves null or undefined values 
+    √ coerceUInt8    should preserves null or undefined values 
+    √ coerceUInt16   should preserves null or undefined values 
+    √ coerceUInt32   should preserves null or undefined values 
+    √ coerceInt8     should preserves null or undefined values 
+    √ coerceInt16    should preserves null or undefined values 
+    √ coerceInt32    should preserves null or undefined values 
+    √ coerceFloat    should preserves null or undefined values 
+    √ coerceDouble   should preserves null or undefined values 
+    √ coerceInt64    should preserves null or undefined values 
+    √ coerceUInt64   should preserves null or undefined values 
+
+  UInt64
+    √ should coerce an Int32 into Int64
+    √ should coerce an long number into Int64
+    √ should coerce an long number into Int64
+
+  DateTime
+    √ converting 1491684476245
+
+  Float
+00000000
+    √ should encode float (0)
+00000000
+    √ should encode float (0)
+    √ should decode zero from a buffer with 4 bytes set to zero
+
+  Test Enum
+    √ should create flaggable enum from string array
+    √ should create flaggable enum from flaggable map
+    √ should create non-flaggable enum from non-flaggable map
+    √ should access enum from enum item name
+    √ EnumItem should function properly
+
+  Benchmarking Enums
+    - should verify that our enums are faster than  Enum 2.1.0 (flaggable enum)
+    - should verify that our enums are faster than Enum 2.1.0 ( simple enum )
+
+  ExtensionObject
+    √ should encode an object with an embedded ExtensionObject set to null 
+    √ should encode an object with a valid embedded ExtensionObject
+
+  Factories: construction
+    √ a schema should provide a list of possible fields
+
+  Factories: testing object factory
+    √ should construct a new object from a simple Class Description
+    √ should construct a new object with options from a simple Class Description
+    √ should construct a new object from a complex Class Description
+    √ should encode and decode a simple object created from the Factory
+    √ should encode and decode a composite object created from the Factory
+    √ should encode and decode a composite object containing an array
+    √ should create an Object with a containing an array of JSON object passed in the initializer
+    √ should create an Object with a containing an array of string passed in the initializer
+    √ should handle subtype properly
+    √ should handle StatusCode 
+    √ should handle enumeration properly
+    √ should allow enumeration value to be passed in options during construction
+    √ should encode and decode a structure containing a enumeration properly
+expected schema Shape
+schema { id: 4294836254,
+  name: 'Shape',
+  fields: 
+   [ { name: 'name',
+       fieldType: 'String',
+       defaultValue: [Function: defaultValue],
+       category: 'basic',
+       schema: [Object] },
+     { name: 'shapeType',
+       fieldType: 'EnumShapeType',
+       category: 'enumeration',
+       schema: [Object] },
+     { name: 'color',
+       fieldType: 'EnumColor',
+       defaultValue: [Object],
+       category: 'enumeration',
+       schema: [Object] },
+     { name: 'inner_color',
+       fieldType: 'EnumColor',
+       defaultValue: [Function: defaultValue],
+       category: 'enumeration',
+       schema: [Object] } ],
+  baseType: 'BaseUAObject',
+  resolved: true,
+  _base_schema: undefined,
+  _possible_fields: [ 'name', 'shapeType', 'color', 'inner_color' ],
+  generate_source: 'C:\\KIT\\GitRepository\\node-opcua\\tmp\\_auto_generated_Shape.js' }
+possible_fields [ 'name', 'shapeType', 'color', 'inner_color' ]
+ display_trace_from_this_project_only = 
+    at trace_from_this_projet_only (C:\KIT\GitRepository\node-opcua\lib\misc\utils.js:288:18)
+    at Object.display_trace_from_this_projet_only (C:\KIT\GitRepository\node-opcua\lib\misc\utils.js:305:17)
+    at check_options_correctness_against_schema (C:\KIT\GitRepository\node-opcua\lib\misc\factories_schema_helpers.js:143:35)
+    at new Shape (C:\KIT\GitRepository\node-opcua\tmp\_auto_generated_Shape.js:42:35)
+    at test_constructor_with_invalid_args (C:\KIT\GitRepository\node-opcua\test\misc\test_factories.js:356:21)
+    at Context.<anonymous> (C:\KIT\GitRepository\node-opcua\test\misc\test_factories.js:365:24)
+invalid_options_fields=  [ 'this_invalid_field_should_cause_Shape_Constructor_to_raise_an_exception' ]
+    √ should raise an exception when trying to pass an invalid field to constructor
+
+  Factories: testing strong typed enums
+    √ should throw if a invalid argument is passed for an enum
+    √ should be possible to initialize enumeration with string values
+    √ should be possible to initialize enumeration with integer values as well
+
+  Factories: testing binaryStoreSize
+    √ should implement binaryStoreSize
+
+  Factories: testing encodingDefaultBinary and constructObject
+    √ a factory object should have a encodingDefaultBinary
+    √ should create a object from a encodingDefaultBinaryId
+    √ should encode and decode a Object containing ByteString
+    √ should pretty print an object 
+
+  PacketAnalyzer
+    √ should analyse a encoded object
+
+  Testing that objects created by factory can be persisted as JSON string
+    √ should persist and restore a object in JSON 
+    √ should persist and restore a object in JSON when field has a special toJSON behavior
+JSON string {"name":"","buffer0":["AQIDBA==","AAECAwQ="],"nodeId":["ns=1;s=toto","ns=2;i=1234"]}
+    √ should persist and restore a object in JSON when field is a array of value with special toJSON behavior
+    √ should persist and restore a object in JSON when field has a null value
+
+  factories testing advanced cases
+    √ should set a field to null when default value is specifically null and no value has been provided
+    √ should accept all basic types as field scalar or field arrays (51ms)
+    √ should help JSON.stringify
+
+  BaseUAObject#clone 
+    √ should clone an object 
+    √ should clone a Shape
+
+  Code Generator
+    √ should produce the javascript for new complex type using template 
+    √ should handle new type with base class 
+    √ should handle Schema with recursion 
+
+  Benchmarking Factory Implementation
+    √ Variant1 should work as expected
+    √ Variant2 should work as expected
+    √ Variant3 should work as expected
+    √ Variant should work as expected
+ CYCLE Variant1 op/s 84126.01 count = 42800
+ CYCLE Variant2 op/s 148471.3 count = 74242
+ CYCLE Variant3 op/s 426062.3 count = 213032
+ CYCLE Variant op/s 227422.6 count = 113712
+ Fastest is Variant3
+ Speed Up : x 5
+    √ should (2116ms)
+
+  MessageBuilder
+    √ should raise a message event after reassembling and decoding a message 
+    √ should raise a error event if a HEL or ACK packet is fed instead of a MSG packet 
+    √ should emit a 'invalid_sequence_number' event if a message does not have a 1-increased sequence number
+    √ should not emit a 'invalid_sequence_number' event when message have a 1-increased sequence number
+  message(ReadResponse)                                                                                                             |
+    responseHeader(ResponseHeader)                                                                                                  |
+    .timeStamp : UtcTime                                                                                                            |
+     Sat Nov 07 2015 16:13:50 GMT+0100 (西欧标准时间)                                                                                     |s:4    e:12   n:8    87bb66e86e19d101
+    .requestHandle : IntegerId                                                                                                      |
+     5856                                                                                                                           |s:12   e:16   n:4    e0160000
+    .serviceResult : StatusCode                                                                                                     |
+     0                                                                                                                              |s:16   e:20   n:4    00000000
+      serviceDiagnostics(DiagnosticInfo)                                                                                            |
+      .encodingByte : Mask                                                                                                          |
+       0x0                                                                                                                          |s:20   e:21   n:1    00
+        012345678                                                                                                                   |s:20   e:21   n:1    00
+        n........  <- has SymbolicId
+        .n.......  <- has NamespaceUri
+        ..n......  <- has LocalizedText
+        ...n.....  <- has Locale
+        ....n....  <- has AdditionalInfo
+        .....n...  <- has InnerStatusCode
+        ......n..  <- has InnerDiagnosticInfo
+    .stringTable (length = 0) [                                                                                                     |s:21   e:25   n:4    00000000
+    ] // stringTable                                                                                                                |
+    .additionalHeader : ExtensionObject                                                                                             |
+     null                                                                                                                           |s:25   e:28   n:3    000000
+  .results (length = 3) [                                                                                                           |s:28   e:32   n:4    03000000
+     #0 {                                                                                                                           |
+      .encodingByte : Mask                                                                                                          |
+       0xd                                                                                                                          |s:32   e:33   n:1    0d
+        012345678                                                                                                                   |s:32   e:33   n:1    0d
+        Y........  <- has Value
+        .n.......  <- has StatusCode
+        ..Y......  <- has SourceTimestamp
+        ...Y.....  <- has ServerTimestamp
+        ....n....  <- has SourcePicoseconds
+        .....n...  <- has ServerPicoseconds
+      dataType:    Boolean                                                                                                          |
+      isArray:     true                                                                                                             |
+      dimension:   true                                                                                                             |
+      .Variant (length = 24) [                                                                                                      |s:34   e:38   n:4    18000000
+         #0 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           false                                                                                                                    |s:38   e:39   n:1    00
+         } // # 0                                                                                                                   |
+         #1 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           true                                                                                                                     |s:39   e:40   n:1    01
+         } // # 1                                                                                                                   |
+         #2 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           false                                                                                                                    |s:40   e:41   n:1    00
+         } // # 2                                                                                                                   |
+         #3 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           true                                                                                                                     |s:41   e:42   n:1    01
+         } // # 3                                                                                                                   |
+         #4 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           false                                                                                                                    |s:42   e:43   n:1    00
+         } // # 4                                                                                                                   |
+         #5 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           true                                                                                                                     |s:43   e:44   n:1    01
+         } // # 5                                                                                                                   |
+         #6 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           false                                                                                                                    |s:44   e:45   n:1    00
+         } // # 6                                                                                                                   |
+         #7 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           true                                                                                                                     |s:45   e:46   n:1    01
+         } // # 7                                                                                                                   |
+         #8 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           false                                                                                                                    |s:46   e:47   n:1    00
+         } // # 8                                                                                                                   |
+         #9 {                                                                                                                       |
+          .Variant : Boolean                                                                                                        |
+           true                                                                                                                     |s:47   e:48   n:1    01
+         } // # 9                                                                                                                   |
+         #10 {                                                                                                                      |
+          .Variant : Boolean                                                                                                        |
+           ...                                                                                                                      |s:47   e:62   n:15   010001000100010001000100010001
+         } // # 10                                                                                                                  |
+      ] // Variant                                                                                                                  |
+      .sourceTimestamp : DateTime                                                                                                   |
+       Sat Nov 07 2015 08:49:20 GMT+0100 (西欧标准时间)                                                                                   |s:78   e:86   n:8    c4c6a9cf3019d101
+      .serverTimestamp : DateTime                                                                                                   |
+       Sat Nov 07 2015 16:13:50 GMT+0100 (西欧标准时间)                                                                                   |s:86   e:94   n:8    87bb66e86e19d101
+     } // # 0                                                                                                                       |
+     #1 {                                                                                                                           |
+      .encodingByte : Mask                                                                                                          |
+       0x9                                                                                                                          |s:94   e:95   n:1    09
+        012345678                                                                                                                   |s:94   e:95   n:1    09
+        Y........  <- has Value
+        .n.......  <- has StatusCode
+        ..n......  <- has SourceTimestamp
+        ...Y.....  <- has ServerTimestamp
+        ....n....  <- has SourcePicoseconds
+        .....n...  <- has ServerPicoseconds
+      dataType:    Byte                                                                                                             |
+      isArray:     false                                                                                                            |
+      dimension:   false                                                                                                            |
+      .Variant : Byte                                                                                                               |
+       3                                                                                                                            |s:96   e:97   n:1    03
+      .serverTimestamp : DateTime                                                                                                   |
+       Sat Nov 07 2015 16:13:50 GMT+0100 (西欧标准时间)                                                                                   |s:97   e:105  n:8    87bb66e86e19d101
+     } // # 1                                                                                                                       |
+     #2 {                                                                                                                           |
+      .encodingByte : Mask                                                                                                          |
+       0x9                                                                                                                          |s:105  e:106  n:1    09
+        012345678                                                                                                                   |s:105  e:106  n:1    09
+        Y........  <- has Value
+        .n.......  <- has StatusCode
+        ..n......  <- has SourceTimestamp
+        ...Y.....  <- has ServerTimestamp
+        ....n....  <- has SourcePicoseconds
+        .....n...  <- has ServerPicoseconds
+      dataType:    Byte                                                                                                             |
+      isArray:     false                                                                                                            |
+      dimension:   false                                                                                                            |
+      .Variant : Byte                                                                                                               |
+       3                                                                                                                            |s:107  e:108  n:1    03
+      .serverTimestamp : DateTime                                                                                                   |
+       Sat Nov 07 2015 16:13:50 GMT+0100 (西欧标准时间)                                                                                   |s:108  e:116  n:8    87bb66e86e19d101
+     } // # 2                                                                                                                       |
+  ] // results                                                                                                                      |
+  .diagnosticInfos (length = 0) [                                                                                                   |s:116  e:120  n:4    00000000
+  ] // diagnosticInfos                                                                                                              |
+    √ should decode this problematic ReadResponse 
+
+  MessageBuilderBase
+    √ should assemble a message body composed of a single chunk 
+    √ should assemble a message body composed of a two chunks 
+
+  MessageBuilder with SIGN support
+    √ should not emit an error event if chunks have valid signature
+    √ should reconstruct a full message made of many signed chunks
+00000000: 4f 50 4e 43 00 08 00 00 00 00 00 00 38 00 00 00 68 74 74 70 3a 2f 2f 6f 70 63 66 6f 75 6e 64 61    OPNC........8...http://opcfounda
+00000020: 74 69 6f 6e 2e 6f 72 67 2f 55 41 2f 53 65 63 75 72 69 74 79 50 6f 6c 69 63 79 23 42 61 73 69 63    tion.org/UA/SecurityPolicy#Basic
+00000040: 31 32 38 52 73 61 31 35 d5 03 00 00 30 82 03 d1 30 82 02 b9 a0 03 02 01 02 02 02 10 72 30 0d 06    128Rsa15U...0..Q0..9........r0..
+00000060: 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 81 8e 31 0b 30 09 06 03 55 04 06 13 02 46 52 31 0c 30 0a    .*.H.w......0..1.0...U....FR1.0.
+00000080: 06 03 55 04 08 0c 03 49 44 46 31 0e 30 0c 06 03 55 04 07 0c 05 50 61 72 69 73 31 42 30 40 06 03    ..U....IDF1.0...U....Paris1B0@..
+000000a0: 55 04 0a 0c 39 46 61 6b 65 20 4e 6f 64 65 4f 50 43 55 41 20 43 65 72 74 69 66 69 63 61 74 69 6f    U...9Fake.NodeOPCUA.Certificatio
+000000c0: 6e 20 41 75 74 68 6f 72 69 74 79 20 28 66 6f 72 20 74 65 73 74 69 6e 67 20 6f 6e 6c 79 29 31 1d    n.Authority.(for.testing.only)1.
+000000e0: 30 1b 06 03 55 04 03 0c 14 6e 6f 64 65 2d 6f 70 63 75 61 2e 67 69 74 68 75 62 2e 69 6f 30 1e 17    0...U....node-opcua.github.io0..
+00000100: 0d 31 35 30 32 31 34 31 36 35 34 30 36 5a 17 0d 31 36 30 32 31 34 31 36 35 34 30 36 5a 30 33 31    .150214165406Z..160214165406Z031
+00000120: 12 30 10 06 03 55 04 0a 13 09 4e 6f 64 65 4f 50 43 55 41 31 1d 30 1b 06 03 55 04 03 13 14 75 72    .0...U....NodeOPCUA1.0...U....ur
+00000140: 6e 3a 4e 6f 64 65 4f 50 43 55 41 2d 43 6c 69 65 6e 74 30 81 9f 30 0d 06 09 2a 86 48 86 f7 0d 01    n:NodeOPCUA-Client0..0...*.H.w..
+00000160: 01 01 05 00 03 81 8d 00 30 81 89 02 81 81 00 ab 57 fb 20 e2 0f 2e 32 b3 04 16 8a 5c 6a 41 e3 b0    ........0......+W{.b..23...\jAc0
+00000180: 98 f3 6e d5 3c 9d e3 11 64 ed f3 72 ca ac af ef f4 ad 8c 3a a4 59 5b d5 e4 03 d0 f6 5f 74 83 f2    .snU<.c.dmsrJ,/ot-.:$Y[Ud.Pv_t.r
+000001a0: fe b6 d2 69 71 90 76 5c c6 77 a1 fd a3 dc 4f ec 7a e1 6d 61 31 00 47 f1 c4 f4 58 46 44 b4 75 2d    ~6Riq.v\Fw!}#\Olzama1.GqDtXFD4u-
+000001c0: 95 38 23 4f 08 ff a7 a1 40 db a9 b8 02 0c ea 95 a6 b5 a0 19 7e 0e 0c f0 7a 57 a3 68 48 a4 88 85    .8#O..'!@[)8..j.&5..~..pzW#hH$..
+000001e0: ef 11 14 f1 af 78 e7 7b ce a1 bf 62 3b c9 9f 02 03 01 00 01 a3 82 01 15 30 82 01 11 30 09 06 03    o..q/xg{N!?b;I......#...0...0...
+00000200: 55 1d 13 04 02 30 00 30 1d 06 03 55 1d 0e 04 16 04 14 44 fb 0d a8 28 85 6a 0b 5b 11 5d 43 69 9e    U....0.0...U......D{.((.j.[.]Ci.
+00000220: 3e 3f 68 c3 b5 fc 30 81 ad 06 03 55 1d 23 04 81 a5 30 81 a2 a1 81 94 a4 81 91 30 81 8e 31 0b 30    >?hC5|0.-..U.#..%0."!..$..0..1.0
+00000240: 09 06 03 55 04 06 13 02 46 52 31 0c 30 0a 06 03 55 04 08 0c 03 49 44 46 31 0e 30 0c 06 03 55 04    ...U....FR1.0...U....IDF1.0...U.
+00000260: 07 0c 05 50 61 72 69 73 31 42 30 40 06 03 55 04 0a 0c 39 46 61 6b 65 20 4e 6f 64 65 4f 50 43 55    ...Paris1B0@..U...9Fake.NodeOPCU
+00000280: 41 20 43 65 72 74 69 66 69 63 61 74 69 6f 6e 20 41 75 74 68 6f 72 69 74 79 20 28 66 6f 72 20 74    A.Certification.Authority.(for.t
+000002a0: 65 73 74 69 6e 67 20 6f 6e 6c 79 29 31 1d 30 1b 06 03 55 04 03 0c 14 6e 6f 64 65 2d 6f 70 63 75    esting.only)1.0...U....node-opcu
+000002c0: 61 2e 67 69 74 68 75 62 2e 69 6f 82 09 00 b4 08 90 f7 3c 7e 01 6e 30 2a 06 03 55 1d 11 04 23 30    a.github.io...4..w<~.n0*..U...#0
+000002e0: 21 86 14 75 72 6e 3a 4e 6f 64 65 4f 50 43 55 41 2d 43 6c 69 65 6e 74 82 09 6c 6f 63 61 6c 68 6f    !..urn:NodeOPCUA-Client..localho
+00000300: 73 74 30 09 06 03 55 1d 12 04 02 30 00 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 03 82 01 01    st0...U....0.0...*.H.w..........
+00000320: 00 4f 36 39 bb 00 00 68 8d b5 39 10 ee e5 76 9f 5f 01 7d 6a a9 e6 3f a6 89 1f de d6 87 a4 83 f7    .O69;..h.59.nev._.}j)f?&..^V.$.w
+00000340: ec 51 21 ca 57 e2 fb 4f ae 7b 6f 04 87 ca 3f 82 16 34 4c f6 c8 ac af 5b 74 fc 71 79 ac 74 62 78    lQ!JWb{O.{o..J?..4LvH,/[t|qy,tbx
+00000360: 1e af 96 71 5c f3 69 20 cb 19 37 01 83 95 57 b0 a1 45 b6 28 c8 9e a7 61 28 4a 6b 05 59 89 63 55    ./.q\si.K.7...W0!E6(H.'a(Jk.Y.cU
+00000380: 4b 7d 49 22 7c 6b 78 2b 74 cc 3a 7b ae c6 58 f6 28 71 d2 be 52 eb dc b0 40 1a bf 0d 98 c8 e9 fa    K}I"|kx+tL:{.FXv(qR>Rk\0@.?..Hiz
+000003a0: 23 23 23 23 2a 2a 2a 20 54 45 4d 50 45 52 45 44 20 2a 2a 2a 23 23 23 23 23 d8 a8 5a d3 c4 8a f4    ####***.TEMPERED.***#####X(ZSD.t
+000003c0: e3 a5 1e 3d 63 ca 9d f3 0f 08 55 ef 80 73 51 ee 00 64 9d ed 57 68 40 bf f0 92 08 ea e6 74 7a 0f    c%.=cJ.s..Uo.sQn.d.mWh@?p..jftz.
+000003e0: bb 49 a8 18 b0 36 2b 90 0f 24 58 e9 d9 c8 4d a8 c8 25 62 29 dd 30 20 08 07 5a e9 ed 6a 11 45 10    ;I(.06+..$XiYHM(H%b)]0...Zimj.E.
+
+ .... ( 2048)
+    √ should emit an bad_signature event if chunk has been tempered
+
+  MessageBuilder with SIGN & ENCRYPT support (OPN) 
+    √ should not emit an error event with valid SIGN & ENCRYPT chunks
+
+  MessageBuilder with SIGN & ENCRYPT support (MSG) 
+    √ should process a signed and encrypted message
+
+  MessageChunkManager
+    √ should split a message in chunk and produce a header ( NO SIGN & NO ENCRYPT).
+    √ should split a message in chunk and produce a header (  SIGN & NO ENCRYPT).
+
+  testing ObjectRegistry
+ found => 1 object leaking
+Object [object Object]
+   5655 display_trace_from_this_project_only = 
+
+    at ObjectRegistry.register (C:\KIT\GitRepository\node-opcua\lib\misc\objectRegistry.js:21:80)
+    at Context.<anonymous> (C:\KIT\GitRepository\node-opcua\test\misc\test_objectRegistry.js:28:18)
+
+ found => 0 object leaking
+
+    √ should register and unregister an object
+
+  OPCUA Object creation
+    √ should create a complex type with embedded type
+
+  OPCUA Structure encoding and decoding
+    √ should encode and decode a EndPointDescription
+    √ should encode and decode a GetEndPointResponse 1/4
+    √ should encode and decode a GetEndPointResponse 2/4
+    √ should encode and decode a GetEndPointResponse 3/4
+    √ should encode and decode a GetEndPointResponse 4/4 (137ms)
+    √ should encode and decode a AsymmetricAlgorithmSecurityHeader 
+    √ should encode and decode a OpenSecureChannelRequest
+
+  testing DataValue encoding decoding
+    √ should encode and decode a empty DataValue 1/3
+    √ should encode and decode a DataValue with only value field 2/3
+    √ should encode and decode a DataValue with all fields 3/3
+
+  checking decoding real message bodies captured with WireShark 
+    √ should decode a real OpenSecureChannelRequest message (1)
+    √ should decode a real OpenSecureChannelResponse message (2)
+    √ should decode a real FindServersRequest message
+    √ should decode a real FindServersResponse message
+
+  checking decoding real messageChunks captured with WireShark 
+    √ should decode a real OpenSecureChannelRequest message
+    √ should decode a real OpenSecureChannelResponse message (3)
+    √ should decode a real GetEndPointRequest message
+    √ should decode a real GetEndPointResponse message
+    √ should decode a real CloseSecureChannel message
+    √ should handle tcp packet that have data from two messages
+    √ should decode a real createSessionRequest message
+    √ should decode a real ActivateSessionRequest message
+    √ should decode a real ActivateSessionResponse message
+    √ should decode a real CreateSessionResponse message sent in two chunks
+    √ should decode this real CreateSessionResponse message sent in one chunk
+
+  testing package_analyser
+  message(Person2)                                                                                                                  |
+  .lastName : UAString                                                                                                              |
+   John                                                                                                                             |s:7    e:15   n:8    040000004a6f686e
+  .address : UAString                                                                                                               |
+   Miami                                                                                                                            |s:15   e:24   n:9    050000004d69616d69
+  .age : Int32                                                                                                                      |
+   25                                                                                                                               |s:24   e:28   n:4    19000000
+    √ should analyse a packet 
+
+  Security Policy
+    √ should convert a security policy uri to an enum value
+    √ should return SecurityPolicy.Invalid if not supported
+    √ should turn a Security Policy Enum value into an URI
+    √ should turn a Security Policy short string to an URI
+    √ should thrown an exception when turning an invalid SecurityPolicy into an uri
+
+  Security Policy computeSignature, verifySignature
+    √ should compute a Signature and verify a signature
+    √ should not verify a signature that has been tampered
+
+  SequenceNumberGenerator
+    √ the first sequence number shall be one 
+    √ the second sequence number shall be two 
+    √ the sequence number should roll over to 1 after reaching four billion
+
+  testing utility functions
+    √ replaceBufferWithHexDump
+ display_trace_from_this_project_only = 
+    at trace_from_this_projet_only (C:\KIT\GitRepository\node-opcua\lib\misc\utils.js:288:18)
+    at Object.display_trace_from_this_projet_only (C:\KIT\GitRepository\node-opcua\lib\misc\utils.js:305:17)
+    at Context.<anonymous> (C:\KIT\GitRepository\node-opcua\test\misc\test_utils.js:32:15)
+    √ should stress display_trace_from_this_projet_only at least once, for code covering purpose
+ Setting debug for  <some file>                     to  true
+<some file>                   :43    help!
+    √ make_debugLog
+pos =  0
+slice1 : 414243
+slice2 : 584243
+    √ compare_buffers
+
+ { hello: 'world' }
+    √ dumpIf
+
+  testing redirectToFile
+    √ should redirectToFile with a sync function
+    √ should redirectToFile with a  callback
+    √ should redirectToFile with a sync function
+err =  undefined
+    √ should redirectToFile with a async function
+
+  lowerFirstLetter
+    √ should lowerize a simple string
+
+  normalize_require_file
+    √ should normalize_require_file
+
+  watch dog
+    √ should maintain a subscriber count
+    √ should not have a timer running if no subscriber
+    √ should have the internal timer running after the first subscriber has registered
+    √ should stop the internal timer running after the last subscriber has unregistered
+    √ should fail if the object subscribing to the WatchDog doesn't provide a 'watchdogReset' method
+    √ should install a 'keepAlive' method on  the subscribing object during addSubscriber and remove it during removeSubscriber
+    √ should call the watchdogReset method of a subscriber when timeout has expired
+    √ should visit subscribers on a regular basis
+    √ should emit an event when it finds that some subscriber has reached the timeout period without sending a keepAlive signal
+
+  ComplexType read from XML NodeSET file shall be binary Encodable
+registerDataType: warning : Cannot find DataType ModelChangeStructure
+registerDataType: warning : Cannot find DataType SemanticChangeStructure
+registerDataType: warning : Cannot find DataType RedundantServer
+registerDataType: warning : Cannot find DataType SamplingIntervalDiagnostics
+registerDataType: warning : Cannot find DataType SessionSecurityDiagnostics
+registerDataType: warning : Cannot find DataType TimeZoneDataType
+    √ a DataType should provide a DefaultBinary Encoding object
+    √ should create an enumeration from the ServerState object
+    √ should create an structure from the ServerStatus object
+    √ should ServerStatus object have correct encodingDefaultBinary 
+    √ should encode and decode a ServerStatus object
+    √ should encode and decode a variant containing an extension object being a ServerStatus
+
+  ZZA- testing Secure Client-Server communication
+    √ a client shall be able to establish a SIGNED connection with a server (142ms)
+    √ QQQ1 a client shall be able to establish a SIGN&ENCRYPT connection with a server and a 1024 bit client certificate (89ms)
+    √ QQQ2 a client shall be able to establish a SIGN&ENCRYPT connection with a server and a 2048 bit client certificate (86ms)
+warning client Nonce length doesn't match server nonce length 32  != 16
+ cannot connect to endpoint : opc.tcp://DESKTOP-C48FPKB:2222
+    √ QQQ3 server shall reject secure connection when client provides a nonce with the wrong length (47ms)
+    √ a token shall be updated on a regular basis (6685ms)
+
+  ZZB- testing server behavior on secure connection 
+ Security token has really expired and shall be discarded !!!!
+ Server will now refuse message with token  1
+ Security token has really expired and shall be discarded !!!!
+ Server will now refuse message with token  2
+ message was 
+undefined
+ message was 2: { /*PublishRequest*/
+ requestHeader                 /* RequestHeader                    */: {
+   authenticationToken         /* NodeId                           */: ns=0;b=9434a96da7d46030a80939d892cef933
+   timeStamp                   /* UtcTime                          */: 2017-05-01T22:23:23.356Z
+   requestHandle               /* IntegerId                        */: 8               0x8
+   returnDiagnostics           /* UInt32                           */: 0               0x0
+   auditEntryId                /* UAString                         */: 
+   timeoutHint                 /* UInt32                           */: 30000               0x7530
+   additionalHeader            /* ExtensionObject                  */: null
+ }
+ subscriptionAcknowledgements  /* SubscriptionAcknowledgement   [] */: [ /* empty */ ]
+};
+ Security token has really expired and shall be discarded !!!!
+ Server will now refuse message with token  3
+Warning: securityToken hasn't been renewed
+err =  Error: _socket has been disconnected by third party
+    at ClientTCP_transport._on_socket_ended_message (C:\KIT\GitRepository\node-opcua\lib\transport\tcp_transport.js:249:18)
+    at Socket.<anonymous> (C:\KIT\GitRepository\node-opcua\lib\transport\tcp_transport.js:314:34)
+    at emitNone (events.js:91:20)
+    at Socket.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+ Session is being transferred from channel 358  to channel  359
+warning : disconnection : closing pending sessions
+ERROR: channel.secureChannelId !== session.secureChannelId 359 358
+OPCUAClient#withClientSession: session closed failed ?
+    √ server shall shutdown the connection if client doesn't renew security token on time (7594ms)
+
+  ZZC- testing Security Policy with a valid 1024 bit certificate on server
+    √ should succeed with Basic128Rsa15 with Sign            (1024 bits certificate on server)(2048 bits certificate on client) (1706ms)
+    √ should succeed with Basic128Rsa15 with Sign            (1024 bits certificate on server)(2048 bits certificate on client) (1730ms)
+    √ should succeed with Basic128Rsa15 with SignAndEncrypt  (1024 bits certificate on server)(2048 bits certificate on client) (1604ms)
+    √ should succeed with Basic256      with Sign            (1024 bits certificate on server)(2048 bits certificate on client) (1619ms)
+    √ should succeed with Basic256      with SignAndEncrypt  (1024 bits certificate on server)(2048 bits certificate on client) (1650ms)
+    √ should fail    with Basic256Rsa15 with Sign            (1024 bits certificate on server)(2048 bits certificate on client)
+    √ should fail    with Basic256Rsa15 with SignAndEncrypt  (1024 bits certificate on server)(2048 bits certificate on client)
+    √ should succeed with Basic128Rsa15 with Sign            (1024 bits certificate on server)(1024 bits certificate on client) (1641ms)
+    √ should succeed with Basic128Rsa15 with Sign            (1024 bits certificate on server)(1024 bits certificate on client) (1604ms)
+    √ should succeed with Basic128Rsa15 with SignAndEncrypt  (1024 bits certificate on server)(1024 bits certificate on client) (1616ms)
+    √ should succeed with Basic256      with Sign            (1024 bits certificate on server)(1024 bits certificate on client) (1590ms)
+    √ should succeed with Basic256      with SignAndEncrypt  (1024 bits certificate on server)(1024 bits certificate on client) (1615ms)
+    √ should fail    with Basic256Rsa15 with Sign            (1024 bits certificate on server)(1024 bits certificate on client)
+    √ should fail    with Basic256Rsa15 with SignAndEncrypt  (1024 bits certificate on server)(1024 bits certificate on client)
+    √ connection should fail if security mode requested by client is not supported by server
+
+  ZZD- testing Security Policy with a valid 2048 bit certificate on server
+    √ should succeed with Basic128Rsa15 with Sign            (2048 bits certificate on server)(2048 bits certificate on client) (1618ms)
+    √ should succeed with Basic128Rsa15 with Sign            (2048 bits certificate on server)(2048 bits certificate on client) (1596ms)
+    √ should succeed with Basic128Rsa15 with SignAndEncrypt  (2048 bits certificate on server)(2048 bits certificate on client) (1626ms)
+    √ should succeed with Basic256      with Sign            (2048 bits certificate on server)(2048 bits certificate on client) (1617ms)
+    √ should succeed with Basic256      with SignAndEncrypt  (2048 bits certificate on server)(2048 bits certificate on client) (1625ms)
+    √ should fail    with Basic256Rsa15 with Sign            (2048 bits certificate on server)(2048 bits certificate on client)
+    √ should fail    with Basic256Rsa15 with SignAndEncrypt  (2048 bits certificate on server)(2048 bits certificate on client)
+    √ should succeed with Basic128Rsa15 with Sign            (2048 bits certificate on server)(1024 bits certificate on client) (1601ms)
+    √ should succeed with Basic128Rsa15 with Sign            (2048 bits certificate on server)(1024 bits certificate on client) (1591ms)
+    √ should succeed with Basic128Rsa15 with SignAndEncrypt  (2048 bits certificate on server)(1024 bits certificate on client) (1599ms)
+
+Process finished with exit code 1
